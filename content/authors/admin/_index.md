@@ -99,4 +99,7 @@ user_groups:
 - Visitors
 ---
 
-I am an associate professor and co-director of Professional Skills Training in the International Relations/Political Science Department at the Graduate Institute of International and Development Studies, Geneva. I am also affiliated to the Center for International Environmental Studies, the Center for Trade and Economic Integration, and the Global Governance Centre. Before coming here, I took my DPhil at the University of Oxford and was postdoctoral research fellow at ETH Zürich and USI Lugano.
+I'm an associate professor of international relations and political science at the Graduate Institute of International and Development Studies, Geneva, 
+where I'm co-director of the Professional Skills Training programme,
+and affiliated with the Center for International Environmental Studies, the Center for Trade and Economic Integration, and the Global Governance Centre.
+#Before coming here, I took my DPhil at the University of Oxford and was postdoctoral research fellow at ETH Zürich and USI Lugano.
