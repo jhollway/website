@@ -5,3 +5,8 @@
 resources/
 public/
 .Rproj.user
+.Rhistory
+awesome-cv.cls
+jhprofile.Rmd
+jhprofile.pdf
+kiddiebook.R
