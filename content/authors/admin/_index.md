@@ -1,6 +1,6 @@
 ---
 # Display name
-name: Nelson Bighetti
+name: James Hollway
 
 # Username (this should match the folder name)
 authors:
@@ -10,32 +10,41 @@ authors:
 superuser: true
 
 # Role/position
-role: Professor of Artificial Intelligence
+role: Associate Professor of International Relations and Political Science
 
 # Organizations/Affiliations
 organizations:
-- name: Stanford University
+- name: Graduate Institute of International and Development Studies
   url: ""
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include distributed robotics, mobile computing and programmable matter.
+bio: My research interests include international institutions and political networks.
 
 interests:
-- Artificial Intelligence
-- Computational Linguistics
-- Information Retrieval
+# - International Relations
+# - Political Sociology
+- International Institutions
+- Political Methodology
+- Political Networks
+- Fisheries
+- Freshwater
+- Trade
+# - Military Alliances
 
-education:
-  courses:
-  - course: PhD in Artificial Intelligence
-    institution: Stanford University
-    year: 2012
-  - course: MEng in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    year: 2009
-  - course: BSc in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    year: 2008
+# education:
+#   courses:
+#   - course: DPhil in International Relations
+#    institution: Oxford University
+#     year: 2015
+#   - course: MA in International Relations, Global Governance and Social Theory
+#     institution: Jacobs University Bremen/Universität Bremen
+#     year: 2010
+#   - course: LLB in International Law
+#     institution: Victoria University Wellington
+#     year: 2005
+#   - course: BA in Political Science
+#     institution: Victoria University Wellington
+#     year: 2004
 
 # Social/Academic Networking
 # For available icons, see: https://sourcethemes.com/academic/docs/page-builder/#icons
@@ -45,23 +54,43 @@ social:
 - icon: envelope
   icon_pack: fas
   link: '#contact'  # For a direct email link, use "mailto:test@example.org".
-- icon: twitter
+- icon: skype
   icon_pack: fab
-  link: https://twitter.com/GeorgeCushen
+  link: james-hollway
+- icon: linkedin
+  icon_pack: fab
+  link: https://www.linkedin.com/in/jhollway/
+- icon: cv
+  icon_pack: ai
+  link: files/jhvita.pdf
+- icon: orcid
+  icon_pack: ai
+  link: https://orcid.org/0000-0002-8361-9647
 - icon: google-scholar
   icon_pack: ai
-  link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
+  link: https://scholar.google.co.uk/citations?user=ddOslT4AAAAJ
+- icon: researchgate
+  icon_pack: ai
+  link: https://www.researchgate.net/profile/James_Hollway
+- icon: publons
+  icon_pack: ai
+  link: https://publons.com/researcher/395127/james-hollway/
+- icon: arxiv
+  icon_pack: ai
+  link: http://arxiv.org/a/hollway_j_1
 - icon: github
   icon_pack: fab
-  link: https://github.com/gcushen
+  link: https://github.com/jhollway
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
-# - icon: cv
+- icon: r-project
+  icon_pack: fab
+  link: https://r-forge.r-project.org/account/
+# - icon: dataverse
 #   icon_pack: ai
-#   link: files/cv.pdf
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
-email: ""
+email: "james.hollway@graduateinstitute.ch"
 
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
@@ -70,6 +99,4 @@ user_groups:
 - Visitors
 ---
 
-Nelson Bighetti is a professor of artificial intelligence at the Stanford AI Lab. His research interests include distributed robotics, mobile computing and programmable matter. He leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
+I am an associate professor and co-director of Professional Skills Training in the International Relations/Political Science Department at the Graduate Institute of International and Development Studies, Geneva. I am also affiliated to the Center for International Environmental Studies, the Center for Trade and Economic Integration, and the Global Governance Centre. Before coming here, I took my DPhil at the University of Oxford and was postdoctoral research fellow at ETH Zürich and USI Lugano.
