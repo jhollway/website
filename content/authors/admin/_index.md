@@ -83,9 +83,9 @@ social:
   link: https://github.com/jhollway
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
-- icon: r-project
-  icon_pack: fab
-  link: https://r-forge.r-project.org/account/
+#- icon: r-project
+#  icon_pack: fab
+#  link: https://r-forge.r-project.org/account/
 # - icon: dataverse
 #   icon_pack: ai
 
@@ -99,6 +99,9 @@ user_groups:
 - Visitors
 ---
 
-I'm an associate professor of international relations and political science at the Graduate Institute of International and Development Studies, Geneva, 
-where I'm co-director of the Professional Skills Training programme,
-and affiliated with the Center for International Environmental Studies, the Center for Trade and Economic Integration, and the Global Governance Centre.
+I'm an associate professor of international relations and political science at the Graduate Institute of International and Development Studies, Geneva. 
+I develop relational theories, methods, and data for tackling questions about the complex institutional structures governing domains such as fisheries, freshwater, and trade.
+I bring aspects of this agenda to my teaching, which ranges from courses in statistics and workshops on statistical network modelling,
+through to more theoretical and substantive courses such as an interdisciplinary course on environmental institutions or on the concept of time in political relations.
+At the Graduate Institute, I also serve as co-director of the Professional Skills Training programme,
+and am affiliated with the Center for International Environmental Studies, the Center for Trade and Economic Integration, and the Global Governance Centre.
