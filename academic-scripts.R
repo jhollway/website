@@ -76,9 +76,9 @@ bibtex_2academic <- function(bibfile,
       write(paste0("date: \"", anydate(x[["date"]]), "\""), fileConn, append = T)
 
       # # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
-      # auth_hugo <- str_replace_all(x["author"], " and ", "\", \"")
-      # auth_hugo <- stringi::stri_trans_general(auth_hugo, "latin-ascii")
-      # write(paste0("authors: [\"", auth_hugo,"\"]"), fileConn, append = T)
+      auth_hugo <- str_replace_all(x["author"], " and ", "\", \"")
+      auth_hugo <- stringi::stri_trans_general(auth_hugo, "latin-ascii")
+      write(paste0("authors: [\"", auth_hugo,"\"]"), fileConn, append = T)
 
       # Publication type. Legend:
       # 0 = Uncategorized, 1 = Conference paper, 2 = Journal article
@@ -87,19 +87,19 @@ bibtex_2academic <- function(bibfile,
             fileConn, append = T)
 
       # # Publication details: journal, volume, issue, page numbers and doi link
-      # publication <- x[["journal"]]
-      # if (!is.na(x[["volume"]])) publication <- paste0(publication,
-      #                                                  ", (", x[["volume"]], ")")
-      # if (!is.na(x[["number"]])) publication <- paste0(publication,
-      #                                                  ", ", x[["number"]])
-      # if (!is.na(x[["pages"]])) publication <- paste0(publication,
-      #                                                 ", _pp. ", x[["pages"]], "_")
-      # if (!is.na(x[["doi"]])) publication <- paste0(publication,
-      #                                               ", ", paste0("https://doi.org/",
-      #                                                            x[["doi"]]))
-      #
-      # write(paste0("publication: \"", publication,"\""), fileConn, append = T)
-      # write(paste0("publication_short: \"", publication,"\""),fileConn, append = T)
+      publication <- x[["journal"]]
+      if (!is.na(x[["volume"]])) publication <- paste0(publication,
+                                                       ", (", x[["volume"]], ")")
+      if (!is.na(x[["number"]])) publication <- paste0(publication,
+                                                       ", ", x[["number"]])
+      if (!is.na(x[["pages"]])) publication <- paste0(publication,
+                                                      ", _pp. ", x[["pages"]], "_")
+      if (!is.na(x[["doi"]])) publication <- paste0(publication,
+                                                    ", ", paste0("https://doi.org/",
+                                                                 x[["doi"]]))
+
+      write(paste0("publication: \"", publication,"\""), fileConn, append = T)
+      write(paste0("publication_short: \"", publication,"\""),fileConn, append = T)
 
       # # Abstract and optional shortened version.
       # if (abstract) {
