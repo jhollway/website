@@ -82,7 +82,7 @@ edit_page = {repo_url = "https://github.com/gcushen/hugo-academic", content_dir 
 
 # Enter contact details (optional). To hide a field, clear it to "".
 email = "james.hollway@graduateinstitute.ch"
-phone = "+41-22-9085916"
+# phone = "+41-22-9085916"
 
 # Address
 # For country_code, use the 2-letter ISO code (see https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2 )
@@ -93,7 +93,7 @@ address = {street = "Chemin Eugene-Rigot 2A", city = "Geneva", region = "GE", po
 coordinates = {latitude = "46.220971", longitude = "6.143676"}
 
 # Directions for visitors to locate you.
-directions = "Enter second petal and take the stairs/elevator to 6th floor"
+directions = "Enter second petal/building directly from the street. Take the stairs/elevator on your left to 6th floor. Turn left at the kitchen and my office (P2-639) is about half way down the left-hand (UN) side of offices."
 
 # Office hours
 # A list of your office hours. To remove, set to an empty list `[]`.
@@ -106,7 +106,7 @@ appointment_url = "http://bit.ly/1LPv5My"
 #   Set to `[]` to disable, or comment out unwanted lines with a hash `#`.
 contact_links = [
 #  {icon = "twitter", icon_pack = "fab", name = "DM Me", link = "https://twitter.com/Twitter"},
-  {icon = "skype", icon_pack = "fab", name = "Skype Me", link = "skype:james-hollway?call"},
+# {icon = "skype", icon_pack = "fab", name = "Skype Me", link = "skype:james-hollway?call"},
 #  {icon = "keybase", icon_pack = "fab", name = "Chat on Keybase", link = "https://keybase.io/"},
 #  {icon = "comments", icon_pack = "fas", name = "Discuss on Forum", link = "https://discourse.gohugo.io"},
   # {icon = "telegram", icon_pack = "fab", name = "Telegram Me", link = "https://telegram.me/@Telegram"},
