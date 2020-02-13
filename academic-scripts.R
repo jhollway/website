@@ -1,7 +1,8 @@
 bibtex_2academic <- function(bibfile,
                              outfold,
                              abstract = FALSE,
-                             overwrite = FALSE) {
+                             overwrite = FALSE,
+                             workinprogress = FALSE) {
 
   require(RefManageR)
   require(dplyr)
@@ -44,6 +45,7 @@ bibtex_2academic <- function(bibfile,
                                month == "nov" ~ "11",
                                month == "dec" ~ "12",
                                is.na(month) ~ "01"))
+  if(!workinprogress) mypubs <- mypubs %>% dplyr::filter(pubtype != 1)
 
   # create a function which populates the md template based on the info
   # about a publication
@@ -115,7 +117,7 @@ bibtex_2academic <- function(bibfile,
       # write("image_preview: \"\"", fileConn, append = T)
       # write("selected: false", fileConn, append = T)
       # write("projects: []", fileConn, append = T)
-      # write("tags: []", fileConn, append = T)
+      write(paste0("tags: [",x[["keywords"]],"]"), fileConn, append = T)
       # #links
       # write("url_pdf: \"\"", fileConn, append = T)
       # write("url_preprint: \"\"", fileConn, append = T)
@@ -143,9 +145,7 @@ bibtex_2academic <- function(bibfile,
   apply(mypubs, FUN = function(x) create_md(x), MARGIN = 1)
 }
 
-my_bibfile <- "~/Dropbox/mine.bib"
-out_fold   <- "content/publication"
-
-bibtex_2academic(bibfile  = my_bibfile,
-                 outfold   = out_fold,
-                 abstract  = FALSE)
+bibtex_2academic(bibfile  = "~/Dropbox/mine.bib",
+                 outfold   = "content/publication",
+                 abstract  = FALSE,
+                 overwrite = TRUE)

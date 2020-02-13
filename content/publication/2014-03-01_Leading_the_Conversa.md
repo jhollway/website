@@ -5,4 +5,5 @@ authors: ["James Hollway", "Jonathan Mellon"]
 publication_types: ["2"]
 publication: "ISA Annual Convention, _pp. 1--29_"
 publication_short: "ISA Annual Convention, _pp. 1--29_"
+tags: [Foreign policy, State Department Cables]
 ---

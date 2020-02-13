@@ -5,4 +5,5 @@ authors: ["James Hollway", "Johan H Koskinen"]
 publication_types: ["6"]
 publication: "NA, _pp. 315--332_, https://doi.org/10.1007/978-3-319-24520-1_13"
 publication_short: "NA, _pp. 315--332_, https://doi.org/10.1007/978-3-319-24520-1_13"
+tags: [ERGMs, Fisheries]
 ---

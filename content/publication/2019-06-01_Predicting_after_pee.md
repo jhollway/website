@@ -7,4 +7,5 @@ publication: "arxiv.org
 , _pp. 1--18_"
 publication_short: "arxiv.org
 , _pp. 1--18_"
+tags: [SAOMs, TERGMs]
 ---

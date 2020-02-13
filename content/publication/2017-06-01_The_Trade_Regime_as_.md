@@ -5,4 +5,5 @@ authors: ["Jean-Frederic Morin", "Joost Pauwelyn", "James Hollway"]
 publication_types: ["2"]
 publication: "Journal of International Economic Law, (20), 2, _pp. 365--390_, https://doi.org/10.1093/jiel/jgx013"
 publication_short: "Journal of International Economic Law, (20), 2, _pp. 365--390_, https://doi.org/10.1093/jiel/jgx013"
+tags: [Environmental norms, Network theory, Trade agreements]
 ---

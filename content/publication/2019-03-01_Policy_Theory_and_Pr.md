@@ -5,4 +5,5 @@ authors: ["Klaus Jacob", "Peter King", "Pedro I J Fidelman", "Leandra R Goncalve
 publication_types: ["6"]
 publication: "NA, _pp. 283--300_"
 publication_short: "NA, _pp. 283--300_"
+tags: [international environmental agreements]
 ---

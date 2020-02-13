@@ -5,4 +5,5 @@ authors: ["James Hollway"]
 publication_types: ["3"]
 publication: "NA"
 publication_short: "NA"
+tags: [Fisheries, institutional design]
 ---
