@@ -89,7 +89,8 @@ bibtex_2academic <- function(bibfile,
             fileConn, append = T)
 
       # # Publication details: journal, volume, issue, page numbers and doi link
-      publication <- coalesce(x[["journal"]], paste0(x[["address"]], ": ", x[["publisher"]]))
+      publication <- coalesce(x[["journal"]],
+                              paste0("_", x[["booktitle"]], "_. ", x[["address"]], ": ", x[["publisher"]]))
       if (!is.na(x[["volume"]])) publication <- paste0(publication,
                                                        ", (", x[["volume"]], ")")
       if (!is.na(x[["number"]])) publication <- paste0(publication,
