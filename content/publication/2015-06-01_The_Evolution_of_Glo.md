@@ -5,5 +5,5 @@ authors: ["James Hollway"]
 publication_types: ["3"]
 publication: "_NA_. NA: University of Oxford"
 publication_short: "_NA_. NA: University of Oxford"
-tags: [Fisheries, institutional design]
+tags: [fisheries, institutional design]
 ---
