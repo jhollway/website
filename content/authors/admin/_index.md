@@ -99,9 +99,12 @@ user_groups:
 - Visitors
 ---
 
+I am interested in how actors relate to wicked problems and to each other through complex networks of institutions in ways that affect how they think and behave in environmental or economic domains over time.
 <!-- I'm an associate professor of international relations and political science at the Graduate Institute of International and Development Studies, Geneva.  -->
-My research consists of developing relational theories, methods, and data for tackling questions about the complex institutional structures governing domains such as *fisheries*, *freshwater*, and *trade*.
-<!-- I bring aspects of this agenda to my teaching, which ranges from courses in statistics and workshops on statistical network modelling,
+My research consists of developing multilevel and dynamic theories, methods, and data that help us better understand what the implications of policy choices may be.
+This is what I research but also what I teach.
+
+<!-- for tackling questions about the complex institutional structures governing domains such as *fisheries*, *freshwater*, and *trade*. I bring aspects of this agenda to my teaching, which ranges from courses in statistics and workshops on statistical network modelling,
 through to more theoretical and substantive courses such as an interdisciplinary course on environmental institutions or on the concept of time in political relations. -->
 At the Graduate Institute, I serve as co-director of the *Professional Skills Training* programme,
 and am affiliated with the *Center for International Environmental Studies*, the *Center for Trade and Economic Integration*, and the *Global Governance Centre*.
