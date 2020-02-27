@@ -97,9 +97,9 @@ bibtex_2academic <- function(bibfile,
                                                        ", ", x[["number"]])
       if (!is.na(x[["pages"]])) publication <- paste0(publication,
                                                       ", _pp. ", x[["pages"]], "_")
-      if (!is.na(x[["doi"]])) publication <- paste0(publication,
-                                                    ", ", paste0("https://doi.org/",
-                                                                 x[["doi"]]))
+      # if (!is.na(x[["doi"]])) publication <- paste0(publication,
+      #                                               ", ", paste0("https://doi.org/",
+      #                                                            x[["doi"]]))
 
       write(paste0("publication: \"", publication,"\""), fileConn, append = T)
       write(paste0("publication_short: \"", publication,"\""),fileConn, append = T)

@@ -1,5 +1,5 @@
 ---
-title: "Taking Stock and Moving Forward"
+title: "Taking stock and moving forward"
 date: "2020-04-01"
 authors: ["Frank Biermann", "Rakhyun E Kim", "Kenneth W Abbott", "James Hollway", "Ronald B Mitchell", "Michelle Scobie"]
 publication_types: ["6"]

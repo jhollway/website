@@ -1,5 +1,5 @@
 ---
-title: "Beyond Trade: The Expanding Scope of the Non-Trade Agenda in Trade Agreements"
+title: "Beyond trade: The expanding scope of the non-trade agenda in trade Agreements"
 date: "2018-01-01"
 authors: ["Karolina Milewicz", "James Hollway", "Claire Peacock", "Duncan Snidal"]
 publication_types: ["2"]

@@ -1,5 +1,5 @@
 ---
-title: "Policy Theory and Practice"
+title: "Policy theory and practice"
 date: "2019-03-01"
 authors: ["Klaus Jacob", "Peter King", "Pedro I J Fidelman", "Leandra R Goncalves", "James Hollway", "Sebastian Sewerin"]
 publication_types: ["6"]

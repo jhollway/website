@@ -1,5 +1,5 @@
 ---
-title: "Oceans and Coastal Policy"
+title: "Oceans and coastal policy"
 date: "2019-03-01"
 authors: ["Diana Mangalagiu", "Elaine Baker", "Pedro I J Fidelman", "Leandra R Goncalves", "Peter Harris", "James Hollway", "Jake C Rice"]
 publication_types: ["6"]

@@ -1,5 +1,5 @@
 ---
-title: "Dynamic Network Actor Models: Investigating Coordination Ties through Time"
+title: "Dynamic Network Actor Models: Investigating coordination ties through time"
 date: "2017-01-01"
 authors: ["Christoph Stadtfeld", "James Hollway", "Per Block"]
 publication_types: ["2"]

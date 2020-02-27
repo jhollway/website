@@ -3,7 +3,7 @@ title: "Structural conditions for novelty: the introduction of new environmental
 date: "2020-01-01"
 authors: ["James Hollway", "Jean-Frederic Morin", "Joost Pauwelyn"]
 publication_types: ["2"]
-publication: "International Environmental Agreements: Politics, Law and Economics, (70), 2, _pp. 247--25_, https://doi.org/10.1007/s10784-019-09464-5"
-publication_short: "International Environmental Agreements: Politics, Law and Economics, (70), 2, _pp. 247--25_, https://doi.org/10.1007/s10784-019-09464-5"
+publication: "International Environmental Agreements: Politics, Law and Economics, (20), 1, _pp. 61--83_"
+publication_short: "International Environmental Agreements: Politics, Law and Economics, (20), 1, _pp. 61--83_"
 tags: [environmental norms, network theory, trade agreements]
 ---
