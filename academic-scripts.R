@@ -115,7 +115,8 @@ bibtex_2academic <- function(bibfile,
       # other possible fields are kept empty. They can be customized later by
       # editing the created md
 
-      # write("image_preview: \"\"", fileConn, append = T)
+      # image <- "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Ftw.rpi.edu%2Fimg_org%2Fcambridge_university_press.gif&f=1&nofb=1"
+      # write(paste0("image_preview: \"",image,"\""), fileConn, append = T)
       # write("selected: false", fileConn, append = T)
       # write("projects: []", fileConn, append = T)
       write(paste0("tags: [",x[["keywords"]],"]"), fileConn, append = T)
@@ -132,8 +133,10 @@ bibtex_2academic <- function(bibfile,
       # #other stuff
       # write("math: true", fileConn, append = T)
       # write("highlight: true", fileConn, append = T)
+
       # # Featured image
       # write("[header]", fileConn, append = T)
+      # write(paste0("image: \"",image,"\""), fileConn, append = T)
       # write("image: \"\"", fileConn, append = T)
       # write("caption: \"\"", fileConn, append = T)
 
@@ -150,3 +153,4 @@ bibtex_2academic(bibfile  = "~/Dropbox/mine.bib",
                  outfold   = "content/publication",
                  abstract  = FALSE,
                  overwrite = TRUE)
+blogdown::serve_site()
