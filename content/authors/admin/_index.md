@@ -99,7 +99,7 @@ user_groups:
 - Visitors
 ---
 
-I am interested in how actors relate to wicked environmental and economic problems and to each other through complex networks of institutions.
+How do actors relate to wicked environmental and economic problems and to each other through complex networks of institutions?
 My research is about developing multilevel and dynamic theories, methods, and data to help us better understand the implications of institutional and policy choices in these contexts.
 
 <!-- At the Graduate Institute, I serve as co-director of the *Professional Skills Training* programme,
