@@ -102,8 +102,16 @@ user_groups:
 - Visitors
 ---
 
-How do actors relate to wicked environmental and economic problems and to each other through complex networks of institutions?
-My research is about developing multilevel and dynamic theories, methods, and data to help us better understand the implications of institutional and policy choices in these contexts.
+How do actors seek to address environmental and economic interdependencies through institutions?
+How do the complex networks of institutions they have set up affect how they relate to one another?
+Are these institutions effective? And how can we design or reform them to improve outcomes? 
+
+In my research, I develop multilevel and dynamic theories, methods, and data 
+to help us better understand the implications of institutional and policy choices in these contexts.
+
+<!-- I am Principle Investigator of the PANARCHIC project 
+ (Power and Networks and the Rate of Change in Institutional Complexes),
+ a new 4-year  -->
 
 <!-- At the Graduate Institute, I serve as co-director of the *Professional Skills Training* programme,
 and am affiliated with the *Center for International Environmental Studies*, the *Center for Trade and Economic Integration*, and the *Global Governance Centre*. -->
