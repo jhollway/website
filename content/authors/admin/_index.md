@@ -83,9 +83,9 @@ social:
 - icon: github
   icon_pack: fab
   link: https://github.com/jhollway
-- icon: stack-exchange
-  icon-pack: fab
-  link: https://stackexchange.com/users/18169137/james-h
+# - icon: stack-exchange
+#   icon-pack: fab
+#   link: https://stackexchange.com/users/18169137/james-h
 #- icon: r-project
 #  icon_pack: fab
 #  link: https://r-forge.r-project.org/account/
