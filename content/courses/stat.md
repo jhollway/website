@@ -28,3 +28,7 @@ RISP062 - Spring 2020
 - [Lecture 9 - Duration](https://jhollway.github.io/statsII/STAT_L9_Survival.pdf)
 
 - [Lecture 10 - Choices](https://jhollway.github.io/statsII/STAT_L10_Advanced.html)
+
+## Final projects
+
+- [Marine Gauthier](/post/DATA_REPORT_GAUTHIER.html)
