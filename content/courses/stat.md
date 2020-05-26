@@ -31,4 +31,4 @@ RISP062 - Spring 2020
 
 ## Final projects
 
-- [Marine Gauthier](/post/DATA_REPORT_GAUTHIER.html)
+- [Marine Gauthier](/post/Gauthier/)
