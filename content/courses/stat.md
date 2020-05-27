@@ -37,6 +37,8 @@ RISP062 - Spring 2020
 
 - [Thomas Gmuer](/post/Gmuer/)
 
+- [Marie Kostrz](/post/Kostrz/)
+
 - [Pedro Dos Santos Maia](/post/Maia/)
 
 - [Augusta Nannerini](/post/Nannerini/)
