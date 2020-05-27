@@ -39,4 +39,4 @@ RISP062 - Spring 2020
 
 - [Pedro Dos Santos Maia](/post/Maia/)
 
-- [Augusta Nannerini](/post/Fontes/)
+- [Augusta Nannerini](/post/Nannerini/)
