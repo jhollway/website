@@ -34,3 +34,5 @@ RISP062 - Spring 2020
 - [Marine Gauthier](/post/Gauthier/)
 
 - [Pedro Dos Santos Maia](/post/Maia/)
+
+- [Thomas Gmuer](/post/Gmuer/)
