@@ -31,8 +31,12 @@ RISP062 - Spring 2020
 
 ## Final projects
 
+- [Carolina Fontes](/post/Fontes/)
+
 - [Marine Gauthier](/post/Gauthier/)
+
+- [Thomas Gmuer](/post/Gmuer/)
 
 - [Pedro Dos Santos Maia](/post/Maia/)
 
-- [Thomas Gmuer](/post/Gmuer/)
+- [Augusta Nannerini](/post/Fontes/)
