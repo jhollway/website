@@ -19,11 +19,50 @@ image:
 1. Introduction {#introduction}
 ---------------
 
-    Women’s access to land, both regarding its use and control, has been limited and restricted throughout the world. Gender inequality in accessing productive and financial resources, including land’s rights properties, are related to a large extent to women’s economic, social and cultural exclusion in society. Challenges to women’s use and control over land as well as to other productive resources have been often attributed to insufficient legal provisions, ineffective implementation of these laws and to discriminatory cultural practices inside a community (UN Women, 2013).  
-    Despite a growing number of literature on women’s land rights (Jacobs, 2013; Deere and León, 2001; Agarwal, 1994), the causes of such a gendered structure regarding a secure access to land assets in practice has been less explored. Most studies relate women’s restricted de facto control and use of land in practice to a deficiency in countries legislation. In many countries, constitutional rights to assure gender equality in access to land are observed, nevertheless, these rights are contradicted by laws in the matter of marriage, divorce and inheritance that discriminate women and daughters. Lack of implementation of existing laws and secure protection to women against land grabbing and legal struggles are also pointed as main restrictions factors (Sida, 2012).   
-    Although few works have paid attention to how customary, traditional and social practices as well as power gendered structures affect directly women’s secure access to land assets de facto, specific types of discrimination exercised by within these practices have been less examined. 
-    This paper seeks to look to discrimination in the family as one of the types of discrimination that has an important impact on women’s use and control of land in practice. Discrimination in the family, understood as the primary source of discrimination girls face, will be considered therefore as the main channel of traditional and social practices that directly affect women’s secure access to land assets de facto.
-    The research question that this paper will seek to answer is: Does discrimination in the family affect women’s secure access to land assets in practice? The hypothesis that it will seek to verify is that discrimination in the family does affect a secure access to land in practice, as it is the first source of discrimination, of a power gendered social and economic structure, and main mechanism of traditional and social practices  that reinforces women inequal access to land. 
+Women’s access to land, both regarding its use and control, has been
+limited and restricted throughout the world. Gender inequality in
+accessing productive and financial resources, including land’s rights
+properties, are related to a large extent to women’s economic, social
+and cultural exclusion in society. Challenges to women’s use and control
+over land as well as to other productive resources have been often
+attributed to insufficient legal provisions, ineffective implementation
+of these laws and to discriminatory cultural practices inside a
+community (UN Women, 2013).
+
+Despite a growing number of literature on women’s land rights (Jacobs,
+2013; Deere and León, 2001; Agarwal, 1994), the causes of such a
+gendered structure regarding a secure access to land assets in practice
+has been less explored. Most studies relate women’s restricted de facto
+control and use of land in practice to a deficiency in countries
+legislation. In many countries, constitutional rights to assure gender
+equality in access to land are observed, nevertheless, these rights are
+contradicted by laws in the matter of marriage, divorce and inheritance
+that discriminate women and daughters. Lack of implementation of
+existing laws and secure protection to women against land grabbing and
+legal struggles are also pointed as main restrictions factors (Sida,
+2012).
+
+Although few works have paid attention to how customary, traditional and
+social practices as well as power gendered structures affect directly
+women’s secure access to land assets de facto, specific types of
+discrimination exercised by within these practices have been less
+examined.
+
+This paper seeks to look to discrimination in the family as one of the
+types of discrimination that has an important impact on women’s use and
+control of land in practice. Discrimination in the family, understood as
+the primary source of discrimination girls face, will be considered
+therefore as the main channel of traditional and social practices that
+directly affect women’s secure access to land assets de facto.
+
+The research question that this paper will seek to answer is: Does
+discrimination in the family affect women’s secure access to land assets
+in practice? The hypothesis that it will seek to verify is that
+discrimination in the family does affect a secure access to land in
+practice, as it is the first source of discrimination, of a power
+gendered social and economic structure, and main mechanism of
+traditional and social practices that reinforces women inequal access to
+land.
 
     library(tidyverse)
     library(knitr)
@@ -52,11 +91,63 @@ image:
 2. Data {#data}
 -------
 
-    The data used in this report was collected on Land Portal database and the indicators of the Social Institutions and Gender Index 2019 (SIGI 2019) , provided by the Organization for Economic Cooperation and Development (OECD). The index measure of the variables chose here were calculated by the SIGI 2019. It explores gender discrimination regarding land ownership and in agriculture in 180 countries. 
-    The dependent variable is secure access to land assets in practice (PRACTICElandacc), expressed as “a percentage of women among the total number of agriculture holders” (OECD, 2019). The agricultural holder is understood as the civil or juridical person in charge of the main decisions on use and management control over the agricultural holding resource, or in other words the economic agricultural land. This variable considers, therefore, land used for production purposes, without regard to title in legal form, and measures the incidence of women among agricultural holders.  
-    The main predictor is discrimination in the family (Discrfamily), which includes consideration to formal and informal laws, economic, social, cultural norms and practices that coexist with the legislation system, with customary law, religious rules, embracing parental authority, marriage, household responsibilities, divorce and inheritance rights. This variable “captures social institutions that limit women’s decision-making power and undervalues their status in the household and the family” (Land Portal) . The measurement unit is expressed in percentage of discriminated women in the family in the country. 
-    This work will control for the variables a) restricted civil liberties (civilliberties), which “captures discriminatory laws and practices that restrict women’s access to public space, their political voice and their participation in all aspects of public life” (Land Portal). This variable is measured in percentage of restricted civil liberties of women; b) restricted physical integrity (physicalintegrity), understood as “social institutions that limit women’s and girls’ control over their bodies, that increase women’s vulnerability, and that normalize attitudes toward gender-based violence” (Land Portal), with the measurement unit in in expressed in percentage; c) restricted access to productive and financial resources (financialresources), which captures “women’s restricted access to and control over critical productive and economic resources and assets” (Land Portal), also measured in percentage; d) Secure access to land assets guaranteed by law (LAWlandacc), was expressed as categorical variable, ranging from 0, 0.25, 0.5, 0.75 to 1 (being 0 the best legal framework on equal access rights and 1 no equal legal rights between women and men on access to land ownership); and e) SIGI 2019 (SIGI2019), the Index calculated by the development center of the OECD, and that takes into consideration the indicators and variables above. The measurement unit is an index ranging from 0 to 100, as lower values indicate lower levels of discrimination in social institutions, and the SIGI ranges from 0% for no discrimination to 100% for very high discrimination.
-    Although this data counts with a large number of missing values, this report opted not to include these missing values by omitting NAs. It proceeded in this way, since it considers that all the classes to be predicted are sufficiently represented by the data and that sufficient observations were included, so that the model does not lose statistical power.
+The data used in this report was collected on Land Portal database and
+the indicators of the Social Institutions and Gender Index 2019 (SIGI
+2019) , provided by the Organization for Economic Cooperation and
+Development (OECD). The index measure of the variables chose here were
+calculated by the SIGI 2019. It explores gender discrimination regarding
+land ownership and in agriculture in 180 countries.
+
+The dependent variable is secure access to land assets in practice
+(PRACTICElandacc), expressed as “a percentage of women among the total
+number of agriculture holders” (OECD, 2019). The agricultural holder is
+understood as the civil or juridical person in charge of the main
+decisions on use and management control over the agricultural holding
+resource, or in other words the economic agricultural land. This
+variable considers, therefore, land used for production purposes,
+without regard to title in legal form, and measures the incidence of
+women among agricultural holders.
+
+The main predictor is discrimination in the family (Discrfamily), which
+includes consideration to formal and informal laws, economic, social,
+cultural norms and practices that coexist with the legislation system,
+with customary law, religious rules, embracing parental authority,
+marriage, household responsibilities, divorce and inheritance rights.
+This variable “captures social institutions that limit women’s
+decision-making power and undervalues their status in the household and
+the family” (Land Portal) . The measurement unit is expressed in
+percentage of discriminated women in the family in the country.
+
+This work will control for the variables a) restricted civil liberties
+(civilliberties), which “captures discriminatory laws and practices that
+restrict women’s access to public space, their political voice and their
+participation in all aspects of public life” (Land Portal). This
+variable is measured in percentage of restricted civil liberties of
+women; b) restricted physical integrity (physicalintegrity), understood
+as “social institutions that limit women’s and girls’ control over their
+bodies, that increase women’s vulnerability, and that normalize
+attitudes toward gender-based violence” (Land Portal), with the
+measurement unit in in expressed in percentage; c) restricted access to
+productive and financial resources (financialresources), which captures
+“women’s restricted access to and control over critical productive and
+economic resources and assets” (Land Portal), also measured in
+percentage; d) Secure access to land assets guaranteed by law
+(LAWlandacc), was expressed as categorical variable, ranging from 0,
+0.25, 0.5, 0.75 to 1 (being 0 the best legal framework on equal access
+rights and 1 no equal legal rights between women and men on access to
+land ownership); and e) SIGI 2019 (SIGI2019), the Index calculated by
+the development center of the OECD, and that takes into consideration
+the indicators and variables above. The measurement unit is an index
+ranging from 0 to 100, as lower values indicate lower levels of
+discrimination in social institutions, and the SIGI ranges from 0% for
+no discrimination to 100% for very high discrimination.
+
+Although this data counts with a large number of missing values, this
+report opted not to include these missing values by omitting NAs. It
+proceeded in this way, since it considers that all the classes to be
+predicted are sufficiently represented by the data and that sufficient
+observations were included, so that the model does not lose statistical
+power.
 
     Data <- na.omit(Data_4)
 
@@ -74,7 +165,7 @@ image:
 
     Data$LAWlandacc <- factor(Data$LAWlandacc)
 
-    Descriptive statistics of the data can be verified below.
+Descriptive statistics of the data can be verified below.
 
     table1(~PRACTICElandacc+Discrfamily+financialresources+civilliberties+physicalintegrity+SIGI2019, Data)
 
@@ -233,19 +324,31 @@ Median \[Min, Max\]
 </table>
 "
 
-    The distribution of the dependent variable can be visualized by the histogram below. It is skewed to the right, indicating that most frequently throughout the countries analyzed women represent low percentage of agricultural holders among the total land holders.
+The distribution of the dependent variable can be visualized by the
+histogram below. It is skewed to the right, indicating that most
+frequently throughout the countries analyzed women represent low
+percentage of agricultural holders among the total land holders.
 
     hist(Data$PRACTICElandacc, breaks=30, col="yellow", xlab="Practice land access", main="Dependent Variable Histogram")
 
 ![](histogram-1.png)
 
-    The distribution of the main independent variable can be visualized by the histogram below. It is also skewed to the right, in this case meaning that the countries where discrimination in the family achieve extreme percentage are not the majority.    
+The distribution of the main independent variable can be visualized by
+the histogram below. It is also skewed to the right, in this case
+meaning that the countries where discrimination in the family achieve
+extreme percentage are not the majority.
 
     hist(Data$Discrfamily, breaks=30, col="lightpink", xlab="Discrimination in the family", main="Independent Variable Histogram")
 
 ![](histogramIV-1.png)
 
-    In the scatter plot below, we can observe the relationship between the dependent variable and the main independent variable as well as perceive its linearity. There seems to be a linear relationship between women’s secure access to land in practice and discrimination in the family. The association is also negative, indicating that as discrimination in the family increases, the percentage of women with access to control over the agricultural holding resource decreases. 
+In the scatter plot below, we can observe the relationship between the
+dependent variable and the main independent variable as well as perceive
+its linearity. There seems to be a linear relationship between women’s
+secure access to land in practice and discrimination in the family. The
+association is also negative, indicating that as discrimination in the
+family increases, the percentage of women with access to control over
+the agricultural holding resource decreases.
 
     attach(Data)
 
@@ -257,9 +360,15 @@ Median \[Min, Max\]
 3. Method {#method}
 ---------
 
-    The statistical method chosen was ordinary least squares (OLS) regression to estimate the linear relationship between the dependent variable and independent variable, premising the existence of a negative linear relationship between access to land assets in practice and the main predictor discrimination in the family. 
+The statistical method chosen was ordinary least squares (OLS)
+regression to estimate the linear relationship between the dependent
+variable and independent variable, premising the existence of a negative
+linear relationship between access to land assets in practice and the
+main predictor discrimination in the family.
 
-    In model lm1, only the dependent variable and main predictor were included. Discrimination in the family has a significant negative effect on land access in practice, confirming expectations.  
+In model lm1, only the dependent variable and main predictor were
+included. Discrimination in the family has a significant negative effect
+on land access in practice, confirming expectations.
 
     lm1 <- lm(PRACTICElandacc ~ Discrfamily, data = Data)
     lm1
@@ -354,7 +463,13 @@ R<sup>2</sup> / R<sup>2</sup> adjusted
 </td>
 </tr>
 </table>
-    Model lm2 included the variables restricted access to productive and financial resources (financialresources), restricted civil liberties (civilliberties), and restricted physical integrity (physicalintegrity) as controls. Controlling for these variables, the negative effect of discrimination in family was reduced and turned out to be not significant anymore. 
+
+Model lm2 included the variables restricted access to productive and
+financial resources (financialresources), restricted civil liberties
+(civilliberties), and restricted physical integrity (physicalintegrity)
+as controls. Controlling for these variables, the negative effect of
+discrimination in family was reduced and turned out to be not
+significant anymore.
 
     lm2 <- lm(PRACTICElandacc ~ Discrfamily+financialresources+civilliberties+physicalintegrity, data = Data)
     lm2
@@ -499,7 +614,11 @@ R<sup>2</sup> / R<sup>2</sup> adjusted
 </td>
 </tr>
 </table>
-    In model lm3, the categorical variable access to land guaranteed by law (LAWlandacc) was added as control. Discrimination in the family remained insignificant as lm2, so did the categories of the added control variable.  
+
+In model lm3, the categorical variable access to land guaranteed by law
+(LAWlandacc) was added as control. Discrimination in the family remained
+insignificant as lm2, so did the categories of the added control
+variable.
 
     lm3 <- lm(PRACTICElandacc ~ Discrfamily+financialresources+civilliberties+physicalintegrity+LAWlandacc, data = Data)
     lm3
@@ -706,6 +825,7 @@ R<sup>2</sup> / R<sup>2</sup> adjusted
 </td>
 </tr>
 </table>
+
 Model lm4 controlled for restricted physical integrity
 (physicalintegrity) and access to land guaranteed by law (LAWlandacc).
 In this scenario, the effect of the main predictor became slightly
@@ -883,7 +1003,10 @@ R<sup>2</sup> / R<sup>2</sup> adjusted
 </td>
 </tr>
 </table>
-    Model lm5 controlled just for physical integrity (physicalintegrity). Discrimination in family remained with its negative effect, although not significant. 
+
+Model lm5 controlled just for physical integrity (physicalintegrity).
+Discrimination in family remained with its negative effect, although not
+significant.
 
     lm5 <- lm(PRACTICElandacc ~ Discrfamily+physicalintegrity, data = Data)
     lm5
@@ -995,7 +1118,10 @@ R<sup>2</sup> / R<sup>2</sup> adjusted
 </td>
 </tr>
 </table>
-    Nevertheless, this was the model chosen not even because it has the highest adjusted R squared and the smallest AIC, but also for theoretical reasons, as it will be explained later. 
+
+Nevertheless, this was the model chosen not even because it has the
+highest adjusted R squared and the smallest AIC, but also for
+theoretical reasons, as it will be explained later.
 
     stargazer(lm1, lm2, lm3, lm4, lm5,
               title = "Secure access to land in practice", 
@@ -1583,7 +1709,10 @@ AIC
 </table>
     ## lm5 is the best model
 
-    When checking assumptions, doubts emerged regarding the linearity verified through residuals vs predicted values and observed vs predicted values plots. Points look like somewhat symmetrically distributed, but at the same time, a small bow can be observed.
+When checking assumptions, doubts emerged regarding the linearity
+verified through residuals vs predicted values and observed vs predicted
+values plots. Points look like somewhat symmetrically distributed, but
+at the same time, a small bow can be observed.
 
     plotpreds <- function(lm5, data = Data){
     p1 <- ggplot(lm5, aes(.fitted, .resid)) + 
@@ -1608,7 +1737,11 @@ AIC
 
 ![](linearity-1.png)
 
-    As a robustness check, squaring the main predictor, most common way to deal with nonlinearity, did not change much this pattern. In this case, this report takes into consideration that the relationship between dependent variable and independent variables plus the error term is to a great extension linear.
+As a robustness check, squaring the main predictor, most common way to
+deal with nonlinearity, did not change much this pattern. In this case,
+this report takes into consideration that the relationship between
+dependent variable and independent variables plus the error term is to a
+great extension linear.
 
     Discrfamily2 <- lm(PRACTICElandacc ~ physicalintegrity + 
                     I(Discrfamily^2), Data)
@@ -1653,7 +1786,9 @@ and 64 DF, p-value: 0.007113
 
 ![](linearity2-1.png)
 
-    Multicollinearity was checked through the calculation of high variance inflation factors (VIFs). There seems not to be a problem in this case, as values are close to 1. 
+Multicollinearity was checked through the calculation of high variance
+inflation factors (VIFs). There seems not to be a problem in this case,
+as values are close to 1.
 
     vif(lm5)
 
@@ -1668,7 +1803,9 @@ Discrfamily 1.701102 physicalintegrity 1.701102
 
     ## no multicollinearity
 
-    Checking for endogeneity, we fail to reject the null hypothesis that gama is zero, meaning that there are no signs of misspecification, particularly nonlinearity. 
+Checking for endogeneity, we fail to reject the null hypothesis that
+gama is zero, meaning that there are no signs of misspecification,
+particularly nonlinearity.
 
     resettest(lm5, type = "fitted")
 
@@ -1676,7 +1813,9 @@ Discrfamily 1.701102 physicalintegrity 1.701102
 
 data: lm5 RESET = 0.19641, df1 = 2, df2 = 62, p-value = 0.8222
 
-    Testing correlations between independent variables and residuals with the Person correlation test demonstrated that there is no evidence of correlation. 
+Testing correlations between independent variables and residuals with
+the Person correlation test demonstrated that there is no evidence of
+correlation.
 
     cor.test(Data$Discrfamily, lm5$residuals)
 
@@ -1697,13 +1836,17 @@ t = -2.5546e-16, df = 65, p-value = 1 alternative hypothesis: true
 correlation is not equal to 0 95 percent confidence interval: -0.2402086
 0.2402086 sample estimates: cor -3.168551e-17
 
-    To diagnose autocorrelation, it was used the autocorrelation function (ACF) plot, by which we can see that there is not really a trend for autocorrelation.  
+To diagnose autocorrelation, it was used the autocorrelation function
+(ACF) plot, by which we can see that there is not really a trend for
+autocorrelation.
 
     ggAcf(lm5$residuals)
 
 ![](ACF-1.png)
 
-    When considering the Wald-Wolfowitz runs test, we fail to reject the null hypothesis that there are random runs or sequences and, therefore, assume that the residuals are not autocorrelated.  
+When considering the Wald-Wolfowitz runs test, we fail to reject the
+null hypothesis that there are random runs or sequences and, therefore,
+assume that the residuals are not autocorrelated.
 
     runs.test(lm5$residuals)
 
@@ -1712,7 +1855,9 @@ correlation is not equal to 0 95 percent confidence interval: -0.2402086
 data: lm5$residuals Standardized Runs Statistic = 0.12497, p-value =
 0.9005
 
-    Regarding diagnosing normality, the assumption related to it that the error term should have a population mean of zero is respected, since the mean in this case is very close to zero.
+Regarding diagnosing normality, the assumption related to it that the
+error term should have a population mean of zero is respected, since the
+mean in this case is very close to zero.
 
     mean(lm5$residuals)
 
@@ -1720,7 +1865,9 @@ data: lm5$residuals Standardized Runs Statistic = 0.12497, p-value =
 
     ## The mean is very close to zero
 
-    The normality probability (QQ) plot appears to have a s-shape pattern, so further tests were conducted to verify whether normality can be diagnosed. 
+The normality probability (QQ) plot appears to have a s-shape pattern,
+so further tests were conducted to verify whether normality can be
+diagnosed.
 
     df_resid <- data.frame(resid = lm5$residuals)
     p <- ggplot(df_resid, aes(sample = resid))
@@ -1728,7 +1875,16 @@ data: lm5$residuals Standardized Runs Statistic = 0.12497, p-value =
 
 ![](qqplot-1.png)
 
-    Although some tests used to test whether the residuals were normally distributed, particularly the Shapiro-Wilk test, presented a P-value below 0.05, meaning that the null hypothesis that the residuals are normally distributed would be rejected, this report will take into consideration the Jarque-Bera test. Even if it is not recognized as the most powerful normality test, for the purposes and objectives of this research report, it was considered enough to assume that the errors are normally distributed, as with the Jarque-Bera test we fail to reject the null hypothesis that skewness is zero and the excess of kurtosis is also zero.
+Although some tests used to test whether the residuals were normally
+distributed, particularly the Shapiro-Wilk test, presented a P-value
+below 0.05, meaning that the null hypothesis that the residuals are
+normally distributed would be rejected, this report will take into
+consideration the Jarque-Bera test. Even if it is not recognized as the
+most powerful normality test, for the purposes and objectives of this
+research report, it was considered enough to assume that the errors are
+normally distributed, as with the Jarque-Bera test we fail to reject the
+null hypothesis that skewness is zero and the excess of kurtosis is also
+zero.
 
     ols_test_normality(lm5)
 
@@ -1756,13 +1912,20 @@ data: lm5$residuals X-squared = 4.367, df = 2, p-value = 0.1126
 
     ## normally distributed
 
-    When checking the assumption that the error term has equal variance, which would satisfy the condition of homoscedasticity, the residuals plot seems to suggest that the residuals grow as a function of fitted values, forming a cone shape and indicating that there is heteroskedasticity.  
+When checking the assumption that the error term has equal variance,
+which would satisfy the condition of homoscedasticity, the residuals
+plot seems to suggest that the residuals grow as a function of fitted
+values, forming a cone shape and indicating that there is
+heteroskedasticity.
 
     autoplot(lm5, which = c(1,3))
 
 ![](heteroskedasticity-1.png)
 
-    Nevertheless, when running the Breusch-Pagan test, the null hypothesis that the variance of the residuals is homogenous is not rejected, as the P-value is greater than 0.05. The condition of homoscedasticity, therefore, can be accepted.
+Nevertheless, when running the Breusch-Pagan test, the null hypothesis
+that the variance of the residuals is homogenous is not rejected, as the
+P-value is greater than 0.05. The condition of homoscedasticity,
+therefore, can be accepted.
 
     bptest(lm5, data = Data, studentize = TRUE)
 
@@ -1772,7 +1935,7 @@ data: lm5 BP = 3.2227, df = 2, p-value = 0.1996
 
     ## With bptest, condition of homoskedasticity is satisfied
 
-    Outliers were identified as it can be observed in the box plots. 
+Outliers were identified as it can be observed in the box plots.
 
     outlier(Data$PRACTICElandacc)
 
@@ -1797,13 +1960,18 @@ data: lm5 BP = 3.2227, df = 2, p-value = 0.1996
 
 ![](outliers-3.png)
 
-    The Cook’s Distance plot shows which observations would impact this specific chosen regression model if they were deleted, due to their influence on the predicted outcome. The points with high Cook’s D are 7 (Antigua and Barbuda), 26 (Bhutan) and 36 (Congo).
+The Cook’s Distance plot shows which observations would impact this
+specific chosen regression model if they were deleted, due to their
+influence on the predicted outcome. The points with high Cook’s D are 7
+(Antigua and Barbuda), 26 (Bhutan) and 36 (Congo).
 
     gg_cooksd(lm5)
 
 ![](Cooks%20D-1.png)
 
-    It is possible to observe as well by the dfbeta diagnostic that these observations are the ones that have a higher leverage and a big residual. 
+It is possible to observe as well by the dfbeta diagnostic that these
+observations are the ones that have a higher leverage and a big
+residual.
 
     gg_resleverage(lm5)
 
@@ -1813,7 +1981,11 @@ data: lm5 BP = 3.2227, df = 2, p-value = 0.1996
 
 ![](leverage-2.png)
 
-    However, as a robustness check, running the model without these observations demonstrated that there were no meaningful changes, once the signs and significance remained the same with no major changes in the coefficient effects. The outliers were, therefore, kept in the model.     
+However, as a robustness check, running the model without these
+observations demonstrated that there were no meaningful changes, once
+the signs and significance remained the same with no major changes in
+the coefficient effects. The outliers were, therefore, kept in the
+model.
 
     Data2 <- Data[-c(7,26,36),]
 
@@ -1950,13 +2122,31 @@ R<sup>2</sup> / R<sup>2</sup> adjusted
 </table>
     ## no change in significance or sign. 
 
-    To a great extent, it was demonstrated that the OLS assumptions were satisfied, therefore, respecting the Gauss-Markov Theorem, which states that the OLS is the BLUE – Best (minimizes variance), Linear, Unbiased (e(B) = B), Estimator – “of populations parameters if errors uncorrelated with equal variance and a mean of zero” (slides). 
+To a great extent, it was demonstrated that the OLS assumptions were
+satisfied, therefore, respecting the Gauss-Markov Theorem, which states
+that the OLS is the BLUE – Best (minimizes variance), Linear, Unbiased
+(e(B) = B), Estimator – “of populations parameters if errors
+uncorrelated with equal variance and a mean of zero” (slides).
 
 4. Results {#results}
 ----------
 
-    As mentioned before, lm5 was the model chosen, although the main predictor, discrimination in the family, is not significant. In this model, the effect association of this main independent variable was negative as expected, since the women’s secure access to land in practice (expressed in percentage of women holding control over land) decreases as discrimination against women in the family increases.   
-    Compared to the other fitted models used to check robustness (as per table below), this model was selected not only because it has the highest adjusted R squared and the smallest AIC, but also for theoretical reasons. It controlled for the variable restricted physical integrity (physicalintegrity). Controlling for restricted physical integrity was important, as vulnerability and control over a woman’s own body may affect the ability of a woman discriminated by the family  to manage to control de facto over land assets, which is, in its turn, less explored by the literature.  
+As mentioned before, lm5 was the model chosen, although the main
+predictor, discrimination in the family, is not significant. In this
+model, the effect association of this main independent variable was
+negative as expected, since the women’s secure access to land in
+practice (expressed in percentage of women holding control over land)
+decreases as discrimination against women in the family increases.
+
+Compared to the other fitted models used to check robustness (as per
+table below), this model was selected not only because it has the
+highest adjusted R squared and the smallest AIC, but also for
+theoretical reasons. It controlled for the variable restricted physical
+integrity (physicalintegrity). Controlling for restricted physical
+integrity was important, as vulnerability and control over a woman’s own
+body may affect the ability of a woman discriminated by the family to
+manage to control de facto over land assets, which is, in its turn, less
+explored by the literature.
 
     tab_model(lm1, lm2, lm3, lm4, lm5, show.aic = TRUE)
 
@@ -2485,7 +2675,13 @@ AIC
 </td>
 </tr>
 </table>
-    With the anova test, it is possible to reject the null hypothesis that the increase in the model fit – the original model (lm1) by adding the variable restricted physical integrity – is zero, in favor of the alternative hypothesis that at least one independent variable has effect on women’s access to land in practice, confirming that the variable restricted physical integrity has an explanatory role in the model. 
+
+With the anova test, it is possible to reject the null hypothesis that
+the increase in the model fit – the original model (lm1) by adding the
+variable restricted physical integrity – is zero, in favor of the
+alternative hypothesis that at least one independent variable has effect
+on women’s access to land in practice, confirming that the variable
+restricted physical integrity has an explanatory role in the model.
 
     anova(lm1, lm5)
 
@@ -2500,9 +2696,24 @@ Discrfamily + physicalintegrity Res.Df RSS Df Sum of Sq F Pr(&gt;F)
 5. Conclusion {#conclusion}
 -------------
 
-    This report demonstrated that women’s secure access to land in practice is affected by discrimination of women and girls in the family, controlling for physical integrity.
-    The negative effect association shows that in countries where discrimination against women inside the family reflects a high percentage, the percentage of women detaining control and use of land assets decreases, confirming that gendered family structures impact women’s access to agriculture holdings de facto, reproducing gender socio-economic inequalities. Controlling for restricted physical integrity demonstrated that gender-based violence and women’s body vulnerability also has an impact in these variables association, constraining women’s secure access to land.
-    This report recognizes, nevertheless, its limitations. Better accounts of missing values and normality of the residuals’ distribution should be considered in the future, in order to improve the model presented in this study.  
+This report demonstrated that women’s secure access to land in practice
+is affected by discrimination of women and girls in the family,
+controlling for physical integrity.
+
+The negative effect association shows that in countries where
+discrimination against women inside the family reflects a high
+percentage, the percentage of women detaining control and use of land
+assets decreases, confirming that gendered family structures impact
+women’s access to agriculture holdings de facto, reproducing gender
+socio-economic inequalities. Controlling for restricted physical
+integrity demonstrated that gender-based violence and women’s body
+vulnerability also has an impact in these variables association,
+constraining women’s secure access to land.
+
+This report recognizes, nevertheless, its limitations. Better accounts
+of missing values and normality of the residuals’ distribution should be
+considered in the future, in order to improve the model presented in
+this study.
 
 6. References {#references}
 -------------
