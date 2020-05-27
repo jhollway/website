@@ -32,3 +32,5 @@ RISP062 - Spring 2020
 ## Final projects
 
 - [Marine Gauthier](/post/Gauthier/)
+
+- [Pedro Dos Santos Maia](/post/Maia/)
