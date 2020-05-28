@@ -43,6 +43,8 @@ RISP062 - Spring 2020
 
 - [Augusta Nannerini](/post/Nannerini/)
 
+- [Bilal Salayme](/post/Salayme/)
+
 - [Henrique Sposito](/post/Sposito/)
 
 - [Caixia Wang](/post/Wang/)
