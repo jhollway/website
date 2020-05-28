@@ -39,8 +39,7 @@ ID-RECCO, International Database on REDD+ projects and programs, linking
 Economic, Carbon and Communities data. version 3.0.
 <a href="http://www.reddprojectsdatabase.org" class="uri">http://www.reddprojectsdatabase.org</a>
 
-1.Introduction {#introduction}
-==============
+## 1. Introduction {#introduction}
 
 Over the last twelve years, International Organizations have
 increasingly targeted the forests of the Global South as a way to
@@ -113,8 +112,7 @@ A combination of both REDD+ project-based support and governance
 indicators increase would have a higher correlation with a decrease of
 deforestation rate
 
-2.Data {#data}
-======
+## 2. Data {#data}
 
 This dataset has been created for the sake of this research on the basis
 of the data made available by the ID-RECCO, a project from the CIFOR
@@ -9963,8 +9961,7 @@ I expected the mean absolute percentage error (mape) to improve. There
 seems to be a problem, and I can’t run alternative code such as rpart,
 so I will assume this is correct!
 
-3.Method {#method}
-========
+## 3. Methods {#methods}
 
 To answer the research question I propose linear regression models, one
 based on REDD+ projects-related variables, the second one on governance
@@ -12388,8 +12385,7 @@ fund 5.948683 5 1.195204 rpp 2.069403 1 1.438542 projects 2.021984 1
 most of the variables, as VIF scores are low (close to 1 and way below
 4). Only “fund” is an issue, with a VIF score of 5.
 
-4.Results {#results}
-=========
+## 4. Results {#results}
 
 *Presentation of the three models*
 ----------------------------------
@@ -12535,8 +12531,7 @@ by the lower AIC and higher R2 scores we saw earlier.
 
 ![](performance-1.png)
 
-5.Conclusion {#conclusion}
-============
+## 5. Conclusion {#conclusion}
 
 This analysis leads us to fail to reject the hypothesis according which
 a combination of both REDD+ project-based support and governance

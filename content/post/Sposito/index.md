@@ -1,12 +1,11 @@
+---
 title: Henrique Sposito
 date: 2020-05-27
 math: true
 diagram: true
 image:
   placement: 3
-
-<style> body {text-align: justify} </style>
-<!-- Justify text. -->
+---
 
 -   [1. Introduction](#introduction)
 -   [2. Methodology](#methodology)

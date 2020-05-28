@@ -7,8 +7,15 @@ image:
   placement: 3
 ---
 
+-   [1. Introduction](#introduction)
+-   [2. Data](#data)
+-   [3. Methods](#methods)
+-   [4. Results](#results)
+-   [5. Conclusion](#conclusion)
 
-\#\#1.  Introduction\#\# For this project, I am seeking to understand whether regional density of
+## 1. Introduction {#introduction}
+
+For this project, I am seeking to understand whether regional density of
 main transportation networks in Italy has had an impact on the spread of
 Covid 19 since the Department for Civil Protection has started gathering
 data until 2 weeks after the enforcement of the lockdown (in order to
@@ -21,7 +28,7 @@ impact in the spreading of COVID when accounting for population,
 distance from epicenter and Island regions. My original hypothesis was
 that this would have been the case.
 
-\#\#1.  Data
+## 2. Data {#data}
 
 The data for Covid numbers were found at
 <https://github.com/pcm-dpc/COVID-19/tree/master/dati-regioni> from
@@ -119,7 +126,7 @@ Visualise data in ≥2 helpful ways
 
 ![](unnamed-chunk-1-6.png)
 
-\#\#1.  Method
+## 3. Methods {#methods}
 
 Given that I have both count data per region and per unit of time (day),
 I have decided to use both Poisson and Negative Binomial methods and
@@ -209,6 +216,8 @@ We observe from the start of the period (or account for how many events
 occurred before start of study period) - I am also not sure that this is
 the case here - as the data start when there were already several cases
 in Northern regions but 0s in some of the more distant ones
+
+## 4. Results {#results}
 
 My selected models are as follows:
 
@@ -1997,6 +2006,8 @@ region population is always correlated with higher IRR in total cases
 less cases than their counterparts when all other things are held equal
 - distance from the epicentre seem also to be correlated with less cases
 
+## 5. Conclusion {#conclusion}
+
 in short, while accounting for the exponential spreading of the epidemic
 through Fixed Effects on time, we can see that the virus does not spread
 as quickly in regions that are distant from the epicentre, and on island
@@ -2009,5 +2020,3 @@ ideally, for example, average volume of movement through the
 transporation network per region (that is some region might be less
 travelled) - I also was not sure of how to account for the Lag onset on
 the epidemic trend
-
-\`\`\`

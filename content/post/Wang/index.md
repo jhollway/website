@@ -1,4 +1,4 @@
-   ---
+---
 title: Caixia Wang
 date: 2020-05-27
 math: true
@@ -7280,8 +7280,7 @@ of engaging in social distancing behavior and the legitimisation of
 using restrictive measures remain to be discussed in the future.
 
 
-## References {#references}
-----------
+## References: {#references}
 
 Baum, N. M., Jacobson, P. D., & Goold, S. D. (2009). “Listen to the
 people”: public deliberation about social distancing measures in a

@@ -7,6 +7,13 @@ image:
   placement: 3
 ---
 
+-   [1. Introduction](#introduction)
+-   [2. Data](#data)
+-   [3. Methods](#methods)
+-   [4. Results](#results)
+-   [5. Conclusion](#conclusion)
+-   [References:](#references)
+
 The data in the file “returnees” comprises the following variables: -
 gvtass: government or local authorities assistance. 1 = yes, 2 = no. -
 district: Tall Kalakh or Al-Qusayr - returnassgvt: assistance from
@@ -161,7 +168,7 @@ assistance from relatives/direct family members in Syria 1 = yes 2 = no
     returnees$workhead=as_factor(returnees$workhead)
     returnees$ownprop=as_factor(returnees$ownprop)
 
-I. INTRODUCTION
+## 1. Introduction {#introduction}
 
 Qusayr district, located in Homs governorate and close the Lebanese
 border, remains quite empty. Among the 60,000 inhabitants who lived
@@ -235,7 +242,7 @@ We therefore formulate three hypothese:
 
 <!-- -->
 
-1.  DATA
+## 2. Data {#data}
 
 <!-- -->
 
@@ -306,7 +313,7 @@ It seems that returnee households having a woman at the head of the
 household receive a bit more help than the ones having a man at the top
 of the household.
 
-1.  METHOD
+## 3. Methods {#methods}
 
 We use a binominal logistic regression. Indeed, our dependent variable
 is categorical and binary (1,2). We don’t use fixed and marginal effects
@@ -314,7 +321,7 @@ as there is no overlapping between our responses (the same household has
 not answered twice to the same question in the dataset). The unit of
 analysis is the household.
 
-1.  RESULTS
+## 4. Results {#results}
 
 <!-- -->
 
@@ -1659,7 +1666,7 @@ rely on both the AIC and likelihood ratio test to choose the best
 models. We consider that pseudo R square is slightly higher for model 4
 because it gathers more variables. We therefore choose model 2.
 
-1.  Interpretation of results.
+\#\#1.  Interpretation of results.
 
 As explained below, model 2 shows that our two first variables (District
 and Income) remain significant when we add the two control variables
@@ -1760,7 +1767,7 @@ To go futher, some descriptive statistics
     ##              Western Zeita 
     ##                0.029411765
 
-1.  CONCLUSION:
+## 5. Conclusion {#conclusion}
 
 -   We can reject our hypothesis 1: Being a household that returned to
     Qusayr actually increases and not decreases the odds of receiving
@@ -1853,7 +1860,7 @@ their odds to receive government assistance in the place they currently
 live - especially that they constitute the major parts of displaced from
 Qusayr. However, these figures do not exist until today.
 
-BIBLIOGRAPHY
+## References: {#references}
 
 Alexandra, Kaun. 2008. “When the displaced return: challenges to
 ‘reintegration’ in Angola”. Research Paper n.152, UNHCR. Washington, DC:

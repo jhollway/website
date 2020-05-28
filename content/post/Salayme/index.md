@@ -7,16 +7,17 @@ image:
   placement: 3
 ---
 
-
-
--   [installing the needed packages](#installing-the-needed-packages)
-    -   [Modeling](#modeling)
+-   [1. Introduction](#introduction)
+-   [2. Data](#data)
+-   [3. Methods](#methods)
+-   [4. Results](#results)
+-   [5. Conclusion](#conclusion)
 
 To start in a clean environment:
 
     #rm(list=ls()) 
 
-\#\#Introduction
+## 1. Introduction {#introduction}
 
 The nature and structure of the autocratic regimes play an important
 role in the possibility of regime transition/change, and in shaping the
@@ -133,7 +134,7 @@ installing the needed packages
     ##     arrange, count, desc, failwith, id, mutate, rename, summarise,
     ##     summarize
 
-\#\#DATA
+## 2. Data {#data}
 
 Geddes, Wright, and Frantz “Autocratic Breakdown and Regime Transitions”
 datset is a series-cross section data, that contains “the Start and End
@@ -329,7 +330,7 @@ of transition to autocratic regimes (response case 2), more than in the
 response case 1, which represents the transition into democratic
 regimes.
 
-\#\#Modeling
+## 3. Methods {#methods}
 
 Since my response variable is categorical, with more than two
 catogories, I will use multinominal regression model, using nnet
@@ -1857,7 +1858,9 @@ using the function lrtest
 The test shows us again that the third model seems to have the best
 likelihood ratio among the three models.
 
-\#\#\#Result After doing these tests, it is clear that the third model
+## 4. Results {#results}
+
+After doing these tests, it is clear that the third model
 is the best among our models to predict the subsequent regime nature.
 The third model does not only have more liklihood ratio, but it also
 represent an interesing results for the academia and the related
@@ -2103,7 +2106,7 @@ case (warlord, foreign-occupied or ceases to exist), which as mentioned,
 could be due to the limited numbers of response observations (just 11
 out of 223)
 
-\#\#\#Conclusion
+## 5. Conclusion {#conclusion}
 
 The final results of the chosen model (model3) are academically
 interesting and somehow counterintuitive, even though the statistical
@@ -2124,5 +2127,3 @@ at the same time represents a puzzle regarding the relation between
 military tutelage and democracy. Hence, future studies could focus in
 detail on the correlation between military regimes and the possibilities
 of democratization beyond simple assumptions.
-
-\#\#\#THE END

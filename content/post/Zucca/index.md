@@ -11,10 +11,25 @@ image:
 <style> body {text-align: justify} </style>
 <!-- Justify text. -->
 
-**1. Electoral Discrimination in Switzerland**
-----------------------------------------------
+-   [1. Electoral Discrimination in Switzerland] (#electoral-discrimination-in-switzerland)
+  -   [1.1 Introduction and Research Question] (#introduction-and-research-question)
+  -   [1.2 Hypothese](#hypothese)
+-   [2. Data and Measurement](#data-and-measurement)
+  -   [2.1 Study Setting, Data Source and Characteristics] (#study-setting-data-source-and-characteristics)
+  -   [2.2 Data, Coding, and Measurement] (#data-coding-and-measurement)
+-   [3. Methods] (#methods)
+-   [4. Results](#results)
+  -   [4.1 Overview](#overview)
+  -   [4.2 Model Selection](#model-selection)
+  -   [4.3 Diagnostics](#diagnostics)
+  -   [4.4 Results](#results)
+-   [5. Conclusion](#conclusion)
+-   [References:](#references)
 
-**1.1 Introduction and Research Question**
+
+## 1. Electoral Discrimination in Switzerland {#electoral-discrimination-in-switzerland}
+
+### 1.1 Introduction and Research Question {#introduction-and-research-question}
 
 Switzerland has one of the highest shares of foreign-born population in
 Europe (Nguyen 2016). In 2018, the number of foreign-born represented
@@ -44,7 +59,7 @@ to the federal level by answering the following research question:
 **RQ:** To what extent does the origin of a candidate influences its
 chances of success in Swiss parliamentary elections?
 
-**1.2 Hypotheses**
+### 1.2 Hypotheses {#hypothese}
 
 Voters inferences about the ethnic origins of a candidate have been
 found to be used as heuristic tools during elections (McDermott 1999).
@@ -60,10 +75,10 @@ following hypothesis can be formulated:
 **H1a:** Having an immigration background negatively influences the
 chances of election of a candidate.
 
-**2. Data and Measurement**
----------------------------
 
-**2.1 Study Setting, Data Source and Characteristics**
+## 2 Data and Measurement {#data-and-measurement}
+
+### 2.1  Study Setting, Data Source and Characteristics {#study-setting-data-source-and-characteristics}
 
 Cross-sectional data on the 2019 federal elections of the National
 Council (NC) are employed to test the hypothesis. The NC is the lower
@@ -82,7 +97,7 @@ corresponding to a specific candidate).
     library(utils)
     elections<- read.csv2("/Users/Juliette/Dropbox/Stats II/Assignments (1)/Final project/Agnese Cecilia Maria Zucca_114354_assignsubmission_file_/CN2019.csv", header=TRUE, dec=".")
 
-**2.2 Data, Coding and Measurement**
+### 2.2 Data, Coding, and Measurement {#data-coding-and-measurement}
 
 **Response Variable and Main Independent Variables**
 
@@ -281,8 +296,8 @@ discussed above.
 
     ## [1] "<table class=\"Rtable1\">\n<thead>\n<tr>\n<th class='rowlabel firstrow lastrow'></th>\n<th class='firstrow lastrow'><span class='stratlabel'>Non-Elected<br><span class='stratn'>(N=4464)</span></span></th>\n<th class='firstrow lastrow'><span class='stratlabel'>Elected<br><span class='stratn'>(N=200)</span></span></th>\n<th class='firstrow lastrow'><span class='stratlabel'>Overall<br><span class='stratn'>(N=4664)</span></span></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td class='rowlabel firstrow'><span class='varlabel'>nameorigin</span></td>\n<td class='firstrow'></td>\n<td class='firstrow'></td>\n<td class='firstrow'></td>\n</tr>\n<tr>\n<td class='rowlabel'>Swiss</td>\n<td>3853 (86.3%)</td>\n<td>188 (94.0%)</td>\n<td>4041 (86.6%)</td>\n</tr>\n<tr>\n<td class='rowlabel lastrow'>Non-Swiss</td>\n<td class='lastrow'>611 (13.7%)</td>\n<td class='lastrow'>12 (6.0%)</td>\n<td class='lastrow'>623 (13.4%)</td>\n</tr>\n<tr>\n<td class='rowlabel firstrow'><span class='varlabel'>nameoriginw</span></td>\n<td class='firstrow'></td>\n<td class='firstrow'></td>\n<td class='firstrow'></td>\n</tr>\n<tr>\n<td class='rowlabel'>Swiss</td>\n<td>3853 (86.3%)</td>\n<td>188 (94.0%)</td>\n<td>4041 (86.6%)</td>\n</tr>\n<tr>\n<td class='rowlabel'>non-Western</td>\n<td>252 (5.6%)</td>\n<td>4 (2.0%)</td>\n<td>256 (5.5%)</td>\n</tr>\n<tr>\n<td class='rowlabel lastrow'>Western</td>\n<td class='lastrow'>359 (8.0%)</td>\n<td class='lastrow'>8 (4.0%)</td>\n<td class='lastrow'>367 (7.9%)</td>\n</tr>\n<tr>\n<td class='rowlabel firstrow'><span class='varlabel'>nameoriginl</span></td>\n<td class='firstrow'></td>\n<td class='firstrow'></td>\n<td class='firstrow'></td>\n</tr>\n<tr>\n<td class='rowlabel'>Swiss</td>\n<td>3853 (86.3%)</td>\n<td>188 (94.0%)</td>\n<td>4041 (86.6%)</td>\n</tr>\n<tr>\n<td class='rowlabel'>OtherLang</td>\n<td>347 (7.8%)</td>\n<td>4 (2.0%)</td>\n<td>351 (7.5%)</td>\n</tr>\n<tr>\n<td class='rowlabel lastrow'>SameLang</td>\n<td class='lastrow'>264 (5.9%)</td>\n<td class='lastrow'>8 (4.0%)</td>\n<td class='lastrow'>272 (5.8%)</td>\n</tr>\n<tr>\n<td class='rowlabel firstrow'><span class='varlabel'>agecat</span></td>\n<td class='firstrow'></td>\n<td class='firstrow'></td>\n<td class='firstrow'></td>\n</tr>\n<tr>\n<td class='rowlabel'>18-35</td>\n<td>1986 (44.5%)</td>\n<td>21 (10.5%)</td>\n<td>2007 (43.0%)</td>\n</tr>\n<tr>\n<td class='rowlabel'>36-60</td>\n<td>1857 (41.6%)</td>\n<td>151 (75.5%)</td>\n<td>2008 (43.1%)</td>\n</tr>\n<tr>\n<td class='rowlabel lastrow'>61+</td>\n<td class='lastrow'>621 (13.9%)</td>\n<td class='lastrow'>28 (14.0%)</td>\n<td class='lastrow'>649 (13.9%)</td>\n</tr>\n<tr>\n<td class='rowlabel firstrow'><span class='varlabel'>gender</span></td>\n<td class='firstrow'></td>\n<td class='firstrow'></td>\n<td class='firstrow'></td>\n</tr>\n<tr>\n<td class='rowlabel'>M</td>\n<td>2670 (59.8%)</td>\n<td>116 (58.0%)</td>\n<td>2786 (59.7%)</td>\n</tr>\n<tr>\n<td class='rowlabel lastrow'>F</td>\n<td class='lastrow'>1794 (40.2%)</td>\n<td class='lastrow'>84 (42.0%)</td>\n<td class='lastrow'>1878 (40.3%)</td>\n</tr>\n<tr>\n<td class='rowlabel firstrow'><span class='varlabel'>ballotposition</span></td>\n<td class='firstrow'></td>\n<td class='firstrow'></td>\n<td class='firstrow'></td>\n</tr>\n<tr>\n<td class='rowlabel'>Mean (SD)</td>\n<td>8.92 (8.01)</td>\n<td>2.73 (2.44)</td>\n<td>8.66 (7.95)</td>\n</tr>\n<tr>\n<td class='rowlabel lastrow'>Median [Min, Max]</td>\n<td class='lastrow'>6.00 [1.00, 35.0]</td>\n<td class='lastrow'>2.00 [1.00, 12.0]</td>\n<td class='lastrow'>6.00 [1.00, 35.0]</td>\n</tr>\n<tr>\n<td class='rowlabel firstrow'><span class='varlabel'>incumbent</span></td>\n<td class='firstrow'></td>\n<td class='firstrow'></td>\n<td class='firstrow'></td>\n</tr>\n<tr>\n<td class='rowlabel'>0</td>\n<td>4433 (99.3%)</td>\n<td>61 (30.5%)</td>\n<td>4494 (96.4%)</td>\n</tr>\n<tr>\n<td class='rowlabel lastrow'>1</td>\n<td class='lastrow'>31 (0.7%)</td>\n<td class='lastrow'>139 (69.5%)</td>\n<td class='lastrow'>170 (3.6%)</td>\n</tr>\n<tr>\n<td class='rowlabel firstrow'><span class='varlabel'>precumulation</span></td>\n<td class='firstrow'></td>\n<td class='firstrow'></td>\n<td class='firstrow'></td>\n</tr>\n<tr>\n<td class='rowlabel'>0</td>\n<td>4089 (91.6%)</td>\n<td>193 (96.5%)</td>\n<td>4282 (91.8%)</td>\n</tr>\n<tr>\n<td class='rowlabel lastrow'>1</td>\n<td class='lastrow'>375 (8.4%)</td>\n<td class='lastrow'>7 (3.5%)</td>\n<td class='lastrow'>382 (8.2%)</td>\n</tr>\n<tr>\n<td class='rowlabel firstrow'><span class='varlabel'>polposition</span></td>\n<td class='firstrow'></td>\n<td class='firstrow'></td>\n<td class='firstrow'></td>\n</tr>\n<tr>\n<td class='rowlabel'>0</td>\n<td>716 (16.0%)</td>\n<td>55 (27.5%)</td>\n<td>771 (16.5%)</td>\n</tr>\n<tr>\n<td class='rowlabel'>1</td>\n<td>2172 (48.7%)</td>\n<td>76 (38.0%)</td>\n<td>2248 (48.2%)</td>\n</tr>\n<tr>\n<td class='rowlabel'>2</td>\n<td>1223 (27.4%)</td>\n<td>69 (34.5%)</td>\n<td>1292 (27.7%)</td>\n</tr>\n<tr>\n<td class='rowlabel lastrow'>3</td>\n<td class='lastrow'>353 (7.9%)</td>\n<td class='lastrow'>0 (0%)</td>\n<td class='lastrow'>353 (7.6%)</td>\n</tr>\n<tr>\n<td class='rowlabel firstrow'><span class='varlabel'>Left</span></td>\n<td class='firstrow'></td>\n<td class='firstrow'></td>\n<td class='firstrow'></td>\n</tr>\n<tr>\n<td class='rowlabel'>rest</td>\n<td>3241 (72.6%)</td>\n<td>131 (65.5%)</td>\n<td>3372 (72.3%)</td>\n</tr>\n<tr>\n<td class='rowlabel lastrow'>left</td>\n<td class='lastrow'>1223 (27.4%)</td>\n<td class='lastrow'>69 (34.5%)</td>\n<td class='lastrow'>1292 (27.7%)</td>\n</tr>\n<tr>\n<td class='rowlabel firstrow'><span class='varlabel'>foreign2018</span></td>\n<td class='firstrow'></td>\n<td class='firstrow'></td>\n<td class='firstrow'></td>\n</tr>\n<tr>\n<td class='rowlabel'>Mean (SD)</td>\n<td>24.8 (5.87)</td>\n<td>25.2 (6.46)</td>\n<td>24.8 (5.89)</td>\n</tr>\n<tr>\n<td class='rowlabel lastrow'>Median [Min, Max]</td>\n<td class='lastrow'>25.1 [11.3, 40.0]</td>\n<td class='lastrow'>25.1 [11.3, 40.0]</td>\n<td class='lastrow'>25.1 [11.3, 40.0]</td>\n</tr>\n</tbody>\n</table>\n"
 
-**3. Methods**
---------------
+
+## 3. Methods {#methods}
 
 The effect of the origin of a candidate's name on his electoral success
 are tested by specifying a logistic regression model. The choice of this
@@ -316,10 +331,10 @@ candidates origin. This will allow to assess whether any potential
 established relationship holds with alternative measurements and also to
 detect any specific discrimination pattern across groups.
 
-**4. Results**
---------------
 
-**4.1 Overview**
+## 4. Results {#results}
+
+### 4.1. Overview {#overview}
 
 Table 2 below shows the results of the models.
 
@@ -1272,7 +1287,8 @@ None of the two interaction terms (Model 7, Model 8) approaches
 significance, and the odds ratios of name origin lose significance as
 well.
 
-**4.2 Model Selection**
+
+### 4.2 Model Selection {#model-selection}
 
 Models are compared based on AIC, LR test and AUC of ROC curves.
 
@@ -1318,7 +1334,7 @@ rejected).
     ## 1   9 -354.24                     
     ## 2  10 -353.33  1 1.8178     0.1776
 
-**4.3 Diagnostics**
+### 4.3 Diagnostics {#daignostics}
 
 The GVIFs do not indicate a problem of multicollinearity (no score &gt;
 4). An outlier test reveals the presence of 232 outliers for the
@@ -1354,7 +1370,7 @@ be explained how to better account for this problem in the future.
     ## [226] 32 31 31 30 33 29 26 32 33 28 28 28 35 28 33 35 32 35 27 28 27 30 29 32 35
     ## [251] 26 33 30 34 27 29
 
-**4.4 Results**
+### 4.4 Results {#results}
 
     tab_model(m4, show.loglik = T, show.aic = T, show.r2 = F, title="Table 3 - Model 4, Logistic Regression Results")
 
@@ -1597,7 +1613,7 @@ non-Swiss, non-Left-wing candidates, while they are situated above 1%
 for Swiss ones; they increase to 1.6% for left-wing non-Swiss candidates
 and to 2.4% for left-wing Swiss ones, holding other covariates at means.
 
-**4.5 Robustness Checks:**
+### 4.5 Robustness Checks:
 
     m8<- glm(elected ~ nameoriginl + gender + agecat + ballotposition + incumbent + precumulation + Left, data=elections1, 
                      family=binomial(link="logit"))
@@ -2015,8 +2031,7 @@ whether non-Western candidates are more discriminated against than
 non-Swiss Western ones. The effect of other predictors is in line with
 results of the main analysis.
 
-**5. Conclusions**
-------------------
+## 5. Conclusion{#conclusion}
 
 To conclude, results of the statistical analyses suggest that bearing a
 non-Swiss name exerts a negative effect on the chances of being elected,
@@ -2045,8 +2060,7 @@ necessarily on top of the lists. In spite of these limitations, this
 project suggests that electoral discrimination in Switzerland is a topic
 (and possibly a problem) worth further investigation.
 
-**6. References**
------------------
+## References {#references}
 
 Black, Jerome and Lynda Erickson. 2006. "Ethno-racial Origins of
 Candidates and Electoral Performance." *Party Politics* 12(4): 541-561.

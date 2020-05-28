@@ -9,15 +9,12 @@ image:
 
 -   [1. Introduction](#introduction)
 -   [2. Data](#data)
--   [3. Method](#method)
--   [Secure access to land in
-    practice](#secure-access-to-land-in-practice)
-    -   [4. Results](#results)
-    -   [5. Conclusion](#conclusion)
-    -   [6. References](#references)
+-   [3. Methods](#methods)
+-   [4. Results](#results)
+-   [5. Conclusion](#conclusion)
+-   [References:](#references)
 
-1. Introduction {#introduction}
----------------
+## 1. Introduction {#introduction}
 
 Women’s access to land, both regarding its use and control, has been
 limited and restricted throughout the world. Gender inequality in
@@ -88,8 +85,7 @@ land.
 
     Data_4 <- read_excel("Data_4 . Carolina Fontes.xlsx")
 
-2. Data {#data}
--------
+## 2. Data {#data}
 
 The data used in this report was collected on Land Portal database and
 the indicators of the Social Institutions and Gender Index 2019 (SIGI
@@ -357,10 +353,9 @@ the agricultural holding resource decreases.
 
 ![](scatterplot-1.png)integer(0)
 
-3. Method {#method}
----------
+## 3. Methods {#methods}
 
-The statistical method chosen was ordinary least squares (OLS)
+vThe statistical method chosen was ordinary least squares (OLS)
 regression to estimate the linear relationship between the dependent
 variable and independent variable, premising the existence of a negative
 linear relationship between access to land assets in practice and the
@@ -2128,8 +2123,7 @@ that the OLS is the BLUE – Best (minimizes variance), Linear, Unbiased
 (e(B) = B), Estimator – “of populations parameters if errors
 uncorrelated with equal variance and a mean of zero” (slides).
 
-4. Results {#results}
-----------
+## 4. Results {#results}
 
 As mentioned before, lm5 was the model chosen, although the main
 predictor, discrimination in the family, is not significant. In this
@@ -2693,8 +2687,7 @@ Discrfamily + physicalintegrity Res.Df RSS Df Sum of Sq F Pr(&gt;F)
 2 64 4571.8 1 334.92 4.6884 0.0341 \* — Signif. codes: 0 ‘***’ 0.001
 ’**’ 0.01 ’*’ 0.05 ‘.’ 0.1 ’ ’ 1
 
-5. Conclusion {#conclusion}
--------------
+## 5. Conclusion {#conclusion}
 
 This report demonstrated that women’s secure access to land in practice
 is affected by discrimination of women and girls in the family,
@@ -2715,8 +2708,7 @@ of missing values and normality of the residuals’ distribution should be
 considered in the future, in order to improve the model presented in
 this study.
 
-6. References {#references}
--------------
+## References: {#references}
 
 Agarwal, B. (1994). A field of one’s own: women and land rights in South
 Asia. Cambridge: Cambridge University Press.

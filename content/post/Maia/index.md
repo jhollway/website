@@ -7,7 +7,14 @@ image:
   placement: 3
 ---
 
-**1. Introduction and Research Question**
+-   [1. Introduction](#introduction)
+-   [2. Data](#data)
+-   [3. Methods](#methods)
+-   [4. Results](#results)
+-   [5. Conclusion](#conclusion)
+-   [References:](#references)
+
+## 1. Introduction {#introduction}
 
 This work’s aim is to estimate lethal violence in the State of Rio de
 Janeiro, Brazil, in relation to other crime data. The dataset here
@@ -25,6 +32,8 @@ between my dependent variable and other crime-related data, holding the
 region variable constant. Therefore, I hope to answer the quesion: How
 is lethal violence impacted by other criminal activities in Rio de
 Janeiro?
+
+## 2. Data {#data}
 
 First, I will load my libraries. Second, I will load my data and have a
 general look at my variables.
@@ -119,7 +128,7 @@ models, like the ones based on ordinary least squares, could be
 inaccurate and inefficient, since they could predict negative counts and
 they do not account for data heteroskedastic (King 1988).
 
-**2. Model choice**
+## 3. Methods {#methods}
 
 Therefore, the poisson model was chosen as a benchmark from where I will
 start working. First, to decide on which poisson model to use. Hence, 4
@@ -1248,7 +1257,7 @@ principle (Kharrat et all 2019). Therefore, the poisson model was chosen
 as the best current model to estimate the impacts of certain crimes on
 the levels of letal violence.
 
-**3. Model analysis**
+## 4. Results {#results}
 
 Looking at the interactions present on the table below, there are some
 relations that should be unpacked. First, if the numbers of military and
@@ -1511,7 +1520,8 @@ R<sup>2</sup> Nagelkerke
 </td>
 </tr>
 </table>
-**4. Model limitations and conclusion**
+
+## 5. Conclusion {#conclusion}
 
 Even though the model helps us to understand the impact of certain
 crimes on the lethal violence levels in Rio, it does not account for any
@@ -1532,7 +1542,7 @@ deaths of police officers are the ones with a bigger impact on the
 levels of lethal violece, since they reduce the amount of available
 police staff and create and a crime-friendly environment.
 
-**5. Bibliography**
+## References: {#references}
 
 Guffey, James E, James G Larson, and Chandrika Kelso. 2010. “Police
 Officer Staffing: Analyzing the Commonly Held Belief That More Cops

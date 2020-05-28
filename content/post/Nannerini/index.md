@@ -7,7 +7,16 @@ image:
   placement: 3
 ---
 
-\#\#Part I: INTRODUCTION \#\# The question that my research aims at
+-   [1. Introduction](#introduction)
+-   [2. Data](#data)
+-   [3. Methods](#methods)
+-   [4. Results](#results)
+-   [5. Conclusion](#conclusion)
+-   [References:](#references)
+
+## 1. Introduction {#introduction}
+
+The question that my research aims at
 asking is whether having a national ID (coded by the variable fin48) has
 an impact on the possibility for people to be part of the workforce in
 Jordan. The interest in the issue came from the fact that Jordan hosts
@@ -17,7 +26,9 @@ Fallah, Krafft, Wahba, 2019). The research question that this analysis
 seeks to answer is therefore the following: “Does having a national ID
 has an impact on the possibility to be part of the workforce in Jordan?”
 
-\#\#Part II: Data. We work with a World Bank Dataset called “Global
+## 2. Data {#data}
+
+We work with a World Bank Dataset called “Global
 Findex”, which reports data about the level of access to formal and
 informal ways of savings, as well as employment. Our dependent variable
 will be “emp\_in”, indicating the possibility for the respondent to be
@@ -486,7 +497,9 @@ the total number presented in the dataset
 
 \#\#Now our dataset is ready to be analysed.
 
-\#\#Part 3: Method. \#\#Given that we are working with categorical
+## 3. Methods {#methods}
+
+Given that we are working with categorical
 variables, and that our dependent variable has a binomial response
 (yes/no), we run a logistic regression for binomial models (gml)
 ————MODELLING——————– \#MOD1: As explained in the introduction, Mod1 has
@@ -1510,7 +1523,9 @@ age) decreases the odds of being in the workforce. Notably, in mod3 age
 has a p value of 0.014, and its coefficient indicates that the
 respondent’s age decreases the odds of being part of the workforce.
 
-\#\#Part 4: Results ——————–COMPARISON TO FIND THE BEST MODEL—————————-
+## 4. Results {#results}
+
+——————–COMPARISON TO FIND THE BEST MODEL—————————-
 \#\#We now compare the performance of the models to see what is our best
 fit, by looking at their AIC. Given that we treated all models for
 heteroskedasticity in the same way, we can still compare their
@@ -1842,7 +1857,9 @@ thier AIC)
 \#\#Mod3 has a bigger AUC (0.80) and it is therefore confirmed to be
 better.
 
-———————-CONCLUSION———————————————————— \#\#Part5: conclusion \#\#What is
+## 5. Conclusion {#conclusion}
+
+What is
 the final interpretation that we can give to mod3, after having taken
 into consideration the heteroskedasticity issue?
 
@@ -2050,7 +2067,9 @@ privileged economic status, it seems that the majority of the
 respondents that are part of the workforce in Jordan do not belong to
 this privileged group.
 
-\#\#References: \#\# Barbelet, Hagen-Zanker and Mansour-Ille, 2018, “the
+## References: {#references}
+
+Barbelet, Hagen-Zanker and Mansour-Ille, 2018, “the
 Jordan Compact: Lessons Learnt and implications for future refugee
 compacts”, ODI working paper \#\#Fallah, Kraff, Wahba, 2019, “The impact
 of refugees on employment and wages in Jordan”, Journal of Development
