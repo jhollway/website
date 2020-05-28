@@ -8,15 +8,14 @@ image:
 ---
 
 -   [1. Introduction](#introduction)
--   [2. Methodology](#methodology)
--   [3. Descriptives](#descriptives)
--   [4. Visualization](#visualization)
--   [5. Correlations](#correlations)
--   [6. Independent](#independent)
--   [7. Dependent](#dependent)
--   [8. Regressions](#regressions)
--   [9. Tests](#tests)
--   [10. Conclusion](#conclusion)
+-   [2. Data and Methodology](#methodology)
+-   [3. Data visualization](#visualization)
+	-   [3.1 Visualization the independent variable and their correlations](#visualizationcorrelations)
+	-   [3.2 Visualizing the Relationships between Independent Variables](#visualizingrelationships)
+ 	-   [3.3 Plotting Relationships between Independent Variables and Dependent Variable](#plotting)
+-   [4. Regression models](#regression)
+	-   [4.1 Post-Estimation Tests](#tests)
+-   [5. Discussions and Conclusion](#conclusion)
 -   [References:](#references)
 
 ## 1. Introduction {#introduction}
@@ -113,7 +112,7 @@ their claim regarding “safe experimentalism” holds once the dataset is
 modified and different regression approaches are attempted.
 
 
-## 2. Methodology {#methodology}
+## 2. Data and Methodology {#methodology}
 
 Rooduijn and Burgoon’s (2018) dataset, made available in the article’s
 replication materials, is adapted and modified to test the hypothesis
@@ -207,7 +206,7 @@ below summarizes the modified dataset and illustrate some of the
 inconsistencies with the data mentioned above, as missing country data
 for some years.
 
-## 3. Descriptives{#descriptives}
+## 3. Data visualization{#visualization}
 
     library(readxl)
 
@@ -220,7 +219,7 @@ for some years.
     ## [1] "<table class=\"Rtable1-zebra\">\n<thead>\n<tr>\n<th class='rowlabel firstrow lastrow'></th>\n<th class='firstrow lastrow'><span class='stratlabel'>Overall<br><span class='stratn'>(N=130)</span></span></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td class='rowlabel firstrow'><span class='varlabel'>country</span></td>\n<td class='firstrow'></td>\n</tr>\n<tr>\n<td class='rowlabel'>Austria</td>\n<td>4 (3.1%)</td>\n</tr>\n<tr>\n<td class='rowlabel'>Belgium</td>\n<td>7 (5.4%)</td>\n</tr>\n<tr>\n<td class='rowlabel'>Czech Republic</td>\n<td>6 (4.6%)</td>\n</tr>\n<tr>\n<td class='rowlabel'>Denmark</td>\n<td>7 (5.4%)</td>\n</tr>\n<tr>\n<td class='rowlabel'>Finland</td>\n<td>7 (5.4%)</td>\n</tr>\n<tr>\n<td class='rowlabel'>France</td>\n<td>7 (5.4%)</td>\n</tr>\n<tr>\n<td class='rowlabel'>Germany</td>\n<td>7 (5.4%)</td>\n</tr>\n<tr>\n<td class='rowlabel'>Great Britain</td>\n<td>6 (4.6%)</td>\n</tr>\n<tr>\n<td class='rowlabel'>Greece</td>\n<td>4 (3.1%)</td>\n</tr>\n<tr>\n<td class='rowlabel'>Hungary</td>\n<td>6 (4.6%)</td>\n</tr>\n<tr>\n<td class='rowlabel'>Ireland</td>\n<td>7 (5.4%)</td>\n</tr>\n<tr>\n<td class='rowlabel'>Italy</td>\n<td>3 (2.3%)</td>\n</tr>\n<tr>\n<td class='rowlabel'>Netherlands</td>\n<td>7 (5.4%)</td>\n</tr>\n<tr>\n<td class='rowlabel'>Norway</td>\n<td>7 (5.4%)</td>\n</tr>\n<tr>\n<td class='rowlabel'>Poland</td>\n<td>7 (5.4%)</td>\n</tr>\n<tr>\n<td class='rowlabel'>Portugal</td>\n<td>6 (4.6%)</td>\n</tr>\n<tr>\n<td class='rowlabel'>Slovakia</td>\n<td>5 (3.8%)</td>\n</tr>\n<tr>\n<td class='rowlabel'>Slovenia</td>\n<td>7 (5.4%)</td>\n</tr>\n<tr>\n<td class='rowlabel'>Spain</td>\n<td>6 (4.6%)</td>\n</tr>\n<tr>\n<td class='rowlabel'>Sweden</td>\n<td>7 (5.4%)</td>\n</tr>\n<tr>\n<td class='rowlabel lastrow'>Switzerland</td>\n<td class='lastrow'>7 (5.4%)</td>\n</tr>\n<tr>\n<td class='rowlabel firstrow'><span class='varlabel'>year</span></td>\n<td class='firstrow'></td>\n</tr>\n<tr>\n<td class='rowlabel'>Mean (SD)</td>\n<td>2010 (3.94)</td>\n</tr>\n<tr>\n<td class='rowlabel lastrow'>Median [Min, Max]</td>\n<td class='lastrow'>2010 [2000, 2010]</td>\n</tr>\n<tr>\n<td class='rowlabel firstrow'><span class='varlabel'>trstplt</span></td>\n<td class='firstrow'></td>\n</tr>\n<tr>\n<td class='rowlabel'>Mean (SD)</td>\n<td>3.68 (1.03)</td>\n</tr>\n<tr>\n<td class='rowlabel lastrow'>Median [Min, Max]</td>\n<td class='lastrow'>3.51 [1.36, 5.61]</td>\n</tr>\n<tr>\n<td class='rowlabel firstrow'><span class='varlabel'>poltrst</span></td>\n<td class='firstrow'></td>\n</tr>\n<tr>\n<td class='rowlabel'>Mean (SD)</td>\n<td>4.13 (1.04)</td>\n</tr>\n<tr>\n<td class='rowlabel lastrow'>Median [Min, Max]</td>\n<td class='lastrow'>4.08 [1.70, 6.06]</td>\n</tr>\n<tr>\n<td class='rowlabel firstrow'><span class='varlabel'>incdif</span></td>\n<td class='firstrow'></td>\n</tr>\n<tr>\n<td class='rowlabel'>Mean (SD)</td>\n<td>3.82 (0.330)</td>\n</tr>\n<tr>\n<td class='rowlabel lastrow'>Median [Min, Max]</td>\n<td class='lastrow'>3.82 [2.96, 4.43]</td>\n</tr>\n<tr>\n<td class='rowlabel firstrow'><span class='varlabel'>unemp</span></td>\n<td class='firstrow'></td>\n</tr>\n<tr>\n<td class='rowlabel'>Mean (SD)</td>\n<td>0.0486 (0.0257)</td>\n</tr>\n<tr>\n<td class='rowlabel lastrow'>Median [Min, Max]</td>\n<td class='lastrow'>0.0456 [0.00882, 0.151]</td>\n</tr>\n<tr>\n<td class='rowlabel firstrow'><span class='varlabel'>educ</span></td>\n<td class='firstrow'></td>\n</tr>\n<tr>\n<td class='rowlabel'>Mean (SD)</td>\n<td>3.07 (0.383)</td>\n</tr>\n<tr>\n<td class='rowlabel lastrow'>Median [Min, Max]</td>\n<td class='lastrow'>3.09 [1.86, 3.69]</td>\n</tr>\n<tr>\n<td class='rowlabel firstrow'><span class='varlabel'>ruralurban</span></td>\n<td class='firstrow'></td>\n</tr>\n<tr>\n<td class='rowlabel'>Mean (SD)</td>\n<td>1.61 (0.0993)</td>\n</tr>\n<tr>\n<td class='rowlabel lastrow'>Median [Min, Max]</td>\n<td class='lastrow'>1.61 [1.40, 1.80]</td>\n</tr>\n<tr>\n<td class='rowlabel firstrow'><span class='varlabel'>age</span></td>\n<td class='firstrow'></td>\n</tr>\n<tr>\n<td class='rowlabel'>Mean (SD)</td>\n<td>48.8 (1.97)</td>\n</tr>\n<tr>\n<td class='rowlabel lastrow'>Median [Min, Max]</td>\n<td class='lastrow'>48.6 [43.8, 54.8]</td>\n</tr>\n<tr>\n<td class='rowlabel firstrow'><span class='varlabel'>imbgeco</span></td>\n<td class='firstrow'></td>\n</tr>\n<tr>\n<td class='rowlabel'>Mean (SD)</td>\n<td>5.10 (0.654)</td>\n</tr>\n<tr>\n<td class='rowlabel lastrow'>Median [Min, Max]</td>\n<td class='lastrow'>5.09 [3.79, 6.90]</td>\n</tr>\n<tr>\n<td class='rowlabel firstrow'><span class='varlabel'>income</span></td>\n<td class='firstrow'></td>\n</tr>\n<tr>\n<td class='rowlabel'>Mean (SD)</td>\n<td>5.68 (1.22)</td>\n</tr>\n<tr>\n<td class='rowlabel'>Median [Min, Max]</td>\n<td>5.73 [3.14, 8.46]</td>\n</tr>\n<tr>\n<td class='rowlabel lastrow'>Missing</td>\n<td class='lastrow'>6 (4.6%)</td>\n</tr>\n<tr>\n<td class='rowlabel firstrow'><span class='varlabel'>stfeco</span></td>\n<td class='firstrow'></td>\n</tr>\n<tr>\n<td class='rowlabel'>Mean (SD)</td>\n<td>4.62 (1.47)</td>\n</tr>\n<tr>\n<td class='rowlabel lastrow'>Median [Min, Max]</td>\n<td class='lastrow'>4.73 [1.34, 7.98]</td>\n</tr>\n<tr>\n<td class='rowlabel firstrow'><span class='varlabel'>radicalvote</span></td>\n<td class='firstrow'></td>\n</tr>\n<tr>\n<td class='rowlabel'>Mean (SD)</td>\n<td>0.0694 (0.0573)</td>\n</tr>\n<tr>\n<td class='rowlabel lastrow'>Median [Min, Max]</td>\n<td class='lastrow'>0.0586 [0, 0.228]</td>\n</tr>\n<tr>\n<td class='rowlabel firstrow'><span class='varlabel'>gdpgrow</span></td>\n<td class='firstrow'></td>\n</tr>\n<tr>\n<td class='rowlabel'>Mean (SD)</td>\n<td>1.40 (3.05)</td>\n</tr>\n<tr>\n<td class='rowlabel lastrow'>Median [Min, Max]</td>\n<td class='lastrow'>1.80 [-8.07, 10.8]</td>\n</tr>\n<tr>\n<td class='rowlabel firstrow'><span class='varlabel'>gdpcat</span></td>\n<td class='firstrow'></td>\n</tr>\n<tr>\n<td class='rowlabel'>boom</td>\n<td>12 (9.2%)</td>\n</tr>\n<tr>\n<td class='rowlabel'>downturn</td>\n<td>6 (4.6%)</td>\n</tr>\n<tr>\n<td class='rowlabel'>exceptg</td>\n<td>23 (17.7%)</td>\n</tr>\n<tr>\n<td class='rowlabel'>minstable</td>\n<td>27 (20.8%)</td>\n</tr>\n<tr>\n<td class='rowlabel'>normalgrowth</td>\n<td>48 (36.9%)</td>\n</tr>\n<tr>\n<td class='rowlabel'>recession</td>\n<td>6 (4.6%)</td>\n</tr>\n<tr>\n<td class='rowlabel lastrow'>shrink</td>\n<td class='lastrow'>8 (6.2%)</td>\n</tr>\n<tr>\n<td class='rowlabel firstrow'><span class='varlabel'>safexp</span></td>\n<td class='firstrow'></td>\n</tr>\n<tr>\n<td class='rowlabel'>Mean (SD)</td>\n<td>0.300 (0.460)</td>\n</tr>\n<tr>\n<td class='rowlabel lastrow'>Median [Min, Max]</td>\n<td class='lastrow'>0 [0, 1.00]</td>\n</tr>\n</tbody>\n</table>\n"
 
 
-## 4. Visualization{#visualization}
+
 
 
 The figure below illustrates the dependent variable, radical party
@@ -308,7 +307,7 @@ geographical region. While political trust does not appear to vary much
 within countries during the period, levels appear to fluctuate farther
 across countries (see below).
 
-## 5.Correlations{#correlations}
+## 3.1 Visualization the independent variable and their correlations{#visualizationcorrelations}
 
     ggplot(dfinal, mapping = aes(x = year, y = gdpgrow)) + geom_line(aes(color = country)) + labs(title = "GDP Growth Across European Countries from 2002 to 2014", 
            x = "Year",
@@ -327,7 +326,8 @@ variables would correlate, this appears not to be the case. The graph
 below shows that their relationship is not linear, and the correlation
 test (cor.test) confirms that their correlation is minimal.
 
-## 6. Independent {#independent}
+
+## 3.2 Visualizing the Relationships between Independent Variables{#visualizingrelationships}
 
     ggplot(dfinal, mapping = aes(x = poltrst, y = gdpgrow)) + geom_line(aes(color = country)) + labs(title = "Correlations Between GDP Growth and Political Trust Across European Countries from 2002 to 2014",
            x = "Political Trust",
@@ -353,7 +353,8 @@ Finally, a simple linear plot of the correlations between radical voting
 and political trust, as well as radical voting and GDP growth (below),
 illustrates no visible linear relationship between the variables.
 
-## 7. Dependent{#dependent}
+
+## 3.3 Plotting Relationships between Independent Variables and Dependent Variable{#plotting}
 
     plot(lm(dfinal$radicalvote ~ dfinal$poltrst))
 
@@ -363,7 +364,7 @@ illustrates no visible linear relationship between the variables.
 
 ![](unnamed-chunk-5-5.png)![](unnamed-chunk-5-6.png)![](unnamed-chunk-5-7.png)![](unnamed-chunk-5-8.png)
 
-## 8.Regressions{#regressions}
+## 4.Regression models{#regression}
 
 
 The table below shows the results of the 6 regression models. The three
@@ -561,7 +562,7 @@ correlates consistently across in statistically significant ways with
 economically stable conditions or decreases in levels of political trust
 (or both).
 
-## 9. Tests{#tests}
+## 4.1 Post-Estimation Tests{#tests}
 
     pbsytest(pols1)
 
@@ -638,7 +639,7 @@ assumptions. Rather it is better to re-think the relationships
 theoretically, how to operationalize the variables hypothesized and try
 to find better datasets to test the hypothesis.
 
-## 10. Conclusion {#conclusion}
+## 5. Discussions and Conclusion {#conclusion}
 
 Although none of the regression models above shows many (or consistent)
 statistically significant results, the “safe experimentalism” hypothesis

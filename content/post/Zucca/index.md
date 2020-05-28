@@ -11,13 +11,13 @@ image:
 <style> body {text-align: justify} </style>
 <!-- Justify text. -->
 
--   [1. Electoral Discrimination in Switzerland] (#electoral-discrimination-in-switzerland)
-  -   [1.1 Introduction and Research Question] (#introduction-and-research-question)
+-   [1. Electoral Discrimination in Switzerland](#electoral-discrimination-in-switzerland)
+  -   [1.1 Introduction and Research Question](#introduction-and-research-question)
   -   [1.2 Hypothese](#hypothese)
 -   [2. Data and Measurement](#data-and-measurement)
-  -   [2.1 Study Setting, Data Source and Characteristics] (#study-setting-data-source-and-characteristics)
-  -   [2.2 Data, Coding, and Measurement] (#data-coding-and-measurement)
--   [3. Methods] (#methods)
+  -   [2.1 Study Setting, Data Source and Characteristics](#study-setting-data-source-and-characteristics)
+  -   [2.2 Data, Coding, and Measurement](#data-coding-and-measurement)
+-   [3. Methods](#methods)
 -   [4. Results](#results)
   -   [4.1 Overview](#overview)
   -   [4.2 Model Selection](#model-selection)
