@@ -23,7 +23,7 @@ account for incubation period). As this is a fairly new topic, there is
 really not much litteraature out there (yet), but I'm sure there will be
 in the future.
 
-\#\#1.  Outline research question and main hypotheses (≤3) My research question is whether transporation network's density has an
+1.  Outline research question and main hypotheses (≤3) My research question is whether transporation network's density has an
 impact in the spreading of COVID when accounting for population,
 distance from epicenter and Island regions. My original hypothesis was
 that this would have been the case.

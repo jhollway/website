@@ -56,7 +56,7 @@ VARIABLES———-
      micro_world <- read_dta("micro_world.dta")
     View(micro_world)
 
-\#\#We see that in this dataset there are 154923 observations and 105
+We see that in this dataset there are 154923 observations and 105
 variables. This high number is explained by the fact that the dataset
 collects observations from countries all over the world. We will limit
 our study to the country of Jordan.
@@ -273,13 +273,13 @@ our study to the country of Jordan.
     ##  Max.   :1.00000   Max.   :1.0000    
     ##                    NA's   :939
 
-\#\#The new dataset that we obtain has 1012 observations, and still 105
+The new dataset that we obtain has 1012 observations, and still 105
 variables. However, this total number of observations will be reduced by
 the time that we treat missing data and the variables that report “don’t
 know” as a response. More detail will become clearer in the next steps
 of the analysis.
 
-\#\#We now check for the presence of missing data in the variables that
+We now check for the presence of missing data in the variables that
 we are going to take into account in our models
 
     newdata2 <- newdata  
@@ -310,7 +310,7 @@ we are going to take into account in our models
     ## Warning: Unknown or uninitialised column: `imputations`.
 
 ![](unnamed-chunk-3-1.png)
-\#\#Usig the package “Amelia” we see that there is a high number of
+Usig the package “Amelia” we see that there is a high number of
 missing data (43%). Luckily, the fact the we are using a very large
 dataset means that even if we reduce 43% of the size of the data, we
 don’t completely reduce the statistical power of the model. Given that
@@ -318,7 +318,7 @@ nature of the data and the World Bank Description about how they were
 gathered, we assume that this data are “MACR”, Missing Completely At
 Random.
 
-\#\#We now want to check if the missing data are in our variables of
+We now want to check if the missing data are in our variables of
 interests and in which percentage, and we do so by building a plot that
 will also help us to see the distribution of our variables of interest
 
@@ -356,7 +356,7 @@ will also help us to see the distribution of our variables of interest
 
 ![](unnamed-chunk-4-7.png)
 
-\#\#From the plot we see that our dependent variable, being part of the
+From the plot we see that our dependent variable, being part of the
 workforce, doesn’t have missing values. We also note that 600
 respondents are out of the workforce and 400 are in the workforce.
 Looking at education, we see that there are not missing values. About
@@ -421,7 +421,7 @@ find the distribution of categorical variables and pay attention to the
     ##   0   1 
     ## 618 390
 
-\#\#We see that the variables fin15(saved for business purpose), fin48
+We see that the variables fin15(saved for business purpose), fin48
 (having a national ID) and fin16 (saved for old age) have a small number
 of “dk” responses
 
@@ -446,7 +446,7 @@ much they matter in the overall dataset
     ##           1           2           3 
     ## 0.112648221 0.873517787 0.009881423
 
-\#\#It is confirmed that the “dk” answers are in a very limited number
+It is confirmed that the “dk” answers are in a very limited number
 and we can therefore treat them as missing values. This means that the
 total number of observations that will be used in the model is less than
 the total number presented in the dataset
@@ -495,7 +495,7 @@ the total number presented in the dataset
 
     ## [1] 14
 
-\#\#Now our dataset is ready to be analysed.
+Now our dataset is ready to be analysed.
 
 ## 3. Methods {#methods}
 
@@ -609,7 +609,7 @@ R<sup>2</sup> Tjur
 </td>
 </tr>
 </table>
-\#\#Interpretation: We build a table that allows us to look at the odds
+Interpretation: We build a table that allows us to look at the odds
 ratio. This means that coefficents with values above 1 increase the
 odds, while values below 1 decrease the odds of being in the work force.
 Remarkably, all the p values in the table are less than 0.005. National
@@ -620,7 +620,7 @@ that being a woman decreases the odds of being in the workforce. Age has
 a p value of &lt;0.001 and coefficient 0.98, meaning that it decreases
 the odds of being in the workforce.
 
-————CHECKS MOD1——————– \#\#First, we check for multicollinearity
+————CHECKS MOD1——————– First, we check for multicollinearity
 
     library(car)
 
@@ -651,19 +651,19 @@ the odds of being in the workforce.
     ## female 1.024280
     ## age    1.093507
 
-\#\#It’s assumed that there is collinearity among the variables if the
+It’s assumed that there is collinearity among the variables if the
 coefficient is &gt; 4. Luckily, we don’t find collinearity in the model
 
-\#\#We can also check visually
+We can also check visually
 
     library(performance)
     plot(check_collinearity(mod1))
 
 ![](unnamed-chunk-10-1.png)
 
-\#\#we confirm that there is not multicollinearity
+we confirm that there is not multicollinearity
 
-\#\#We now look at the residuals
+We now look at the residuals
 
     mod1 <- glm(emp_in ~ fin48 + female +age, 
                 data=newdata2, family = "binomial")
@@ -672,10 +672,10 @@ coefficient is &gt; 4. Luckily, we don’t find collinearity in the model
     ## Warning: Probably bad model fit. Only about 61% of the residuals are inside the error bounds.
 
 ![](unnamed-chunk-11-1.png)
-\#\#It seems that the majority of the residuals fell outside the “error
+It seems that the majority of the residuals fell outside the “error
 bound”, which indicates that there is a problem in our model
 
-\#\#We now test for heteroskedasticity. We run Breush-Pagan test, where
+We now test for heteroskedasticity. We run Breush-Pagan test, where
 the null hypothesis is that there is not heteroskedasticity.
 
     library(lmtest)
@@ -697,10 +697,10 @@ the null hypothesis is that there is not heteroskedasticity.
     ## data:  mod1
     ## BP = 19.496, df = 3, p-value = 0.0002158
 
-\#\#P value is &gt;0.05. Hence, we fail to reject the null hypothesis of
+P value is &gt;0.05. Hence, we fail to reject the null hypothesis of
 homogeneity and we accept that there is heteroskedasticity in the model
 
-\#\#We treat heteroskedasticity by clustering by the variable age
+We treat heteroskedasticity by clustering by the variable age
 
     library(sandwich)
     tab_model(mod1, vcov.fun = "CL", vcov.args = ~ age, show.obs = F, show.r2 = F, show.se = T, show.stat = T)
@@ -815,13 +815,13 @@ Respondent age
 </td>
 </tr>
 </table>
-\#\#Interpretation: Once we cluster mod1 by age, we see that fin48 is
+Interpretation: Once we cluster mod1 by age, we see that fin48 is
 not statistically significant anymore. However, being a woman still
 decreases the odds of being in the workforce, with a p value of
 &lt;0.001. Age has a p value of 0.009 and decreases the odds of being in
 the workforce.
 
-——MODEL 2———- \#\#In Model 2 we add the variable education (educ), and
+——MODEL 2———- In Model 2 we add the variable education (educ), and
 we keep all the other variables of mod1, including fin48 (even if it was
 revealed to be not statistically significant, because it maintains
 theoretical importance for this research)
@@ -942,14 +942,14 @@ R<sup>2</sup> Tjur
 </td>
 </tr>
 </table>
-\#\#Interpretation: As it also happened in mod1 before that we treated
+Interpretation: As it also happened in mod1 before that we treated
 heteroskedasticity, we have very small p values for each of our
 variables. I will therefore interpret this model after having carried
 out the necessary checks.
 
 ———–CHECKS MOD2————————
 
-\#\#Multicollinearity. This test is very important be cause it could be
+Multicollinearity. This test is very important be cause it could be
 claimed that having a national ID is correlated to the variable
 indicating the level of education.
 
@@ -962,18 +962,18 @@ indicating the level of education.
     ## fin48  1.113010
     ## age    1.108781
 
-\#\#The coefficients range between 1.04 and 1.05. We can therefore
+The coefficients range between 1.04 and 1.05. We can therefore
 deduce that we don’t have an issue of multicollinearity.
 
-\#\#We can also check visually by constructing a plot:
+We can also check visually by constructing a plot:
 
     library(performance)
     plot(check_collinearity(mod2))
 
 ![](unnamed-chunk-16-1.png)
-\#\#We conclude that there is not collinearity among the variables
+We conclude that there is not collinearity among the variables
 
-\#\#We check the residuals.
+We check the residuals.
 
     library(performance)
     library(lme4)
@@ -995,10 +995,10 @@ deduce that we don’t have an issue of multicollinearity.
     ## Warning: Probably bad model fit. Only about 65% of the residuals are inside the error bounds.
 
 ![](unnamed-chunk-17-1.png)
-\#\#Only 68% of the residuals are within the error bound, which (as
+Only 68% of the residuals are within the error bound, which (as
 happend in mod1) tells us that there is a problem in the model
 
-\#\#We also check for heteroskedasticity with the Breush-Pagan test
+We also check for heteroskedasticity with the Breush-Pagan test
 
     mod2 <- glm(emp_in ~ educ + female + fin15 + age, 
                 data=newdata2, family = "binomial")
@@ -1011,10 +1011,10 @@ happend in mod1) tells us that there is a problem in the model
     ## data:  mod2
     ## BP = 52.811, df = 4, p-value = 9.332e-11
 
-\#\#Our p value is &lt; than 0.05. We have reject the null, and accept
+Our p value is &lt; than 0.05. We have reject the null, and accept
 the fact that in our mod2 there is heteroskedasticity
 
-\#\#We have to treat heteroskedascity and we cluster for the variable
+We have to treat heteroskedascity and we cluster for the variable
 age
 
     library(sandwich)
@@ -1150,14 +1150,14 @@ Respondent age
 </td>
 </tr>
 </table>
-\#\#As it happened in mod1, when we cluster by age the variable fin48
+As it happened in mod1, when we cluster by age the variable fin48
 loses statistical significance. However, education keeps a very low p
 value, &lt;0.001, and a coefficient of 2.44, meaning that the level of
 education increases the odds of being in the workforce. Being a woman
 also keeps a low p value, &lt;0.001, with coefficient 0.12. Age in this
 case has a p value of 0.175, so it loses it statistical significance.
 
-———————–MOD3———————————- \#\#In Model 3 we add the control variable
+———————–MOD3———————————- In Model 3 we add the control variable
 “fin15” and “fin16”, which give us information about the conditions of
 the Jordanian labour market, and we keep all the other variables of mod1
 and mod 2.
@@ -1306,20 +1306,20 @@ R<sup>2</sup> Tjur
 </td>
 </tr>
 </table>
-\#\#Interpretation: We see that all the variables have very small p
+Interpretation: We see that all the variables have very small p
 values, but we suspect that there is heteroskedasticity in the model
 (given its similarity with mod 1 and mod2). We therefore run the test
 for multicollinearity and heteroskedasticity before interpreting the
 results.
 
-—————-CHECKS MOD3————————————————– \#\#We can check for
+—————-CHECKS MOD3————————————————– We can check for
 multicollinearity by constructing a plot:
 
     library(performance)
     plot(check_collinearity(mod3))
 
 ![](unnamed-chunk-21-1.png)
-\#\#we note that there is not collinerarity among the varibles \#\#We
+we note that there is not collinerarity among the varibles We
 also check for heteroskedasticity with the Breush-Pagan test
 
     mod3 <- glm(emp_in ~ educ + female + fin15 + fin16 + fin48 + age, 
@@ -1333,10 +1333,10 @@ also check for heteroskedasticity with the Breush-Pagan test
     ## data:  mod3
     ## BP = 50.364, df = 6, p-value = 3.974e-09
 
-\#\#Our p value is &lt; than 0.05. We have reject the null, and accept
+Our p value is &lt; than 0.05. We have reject the null, and accept
 the fact that in our mod2 there is heteroskedasticity
 
-\#\#We treat heteroskedascity as we did in the previous models, and we
+We treat heteroskedascity as we did in the previous models, and we
 cluster for the variable age
 
     library(sandwich)
@@ -1512,7 +1512,7 @@ Respondent age
 </td>
 </tr>
 </table>
-\#\#As it happened in mod1, when we cluster by age the variable fin48
+As it happened in mod1, when we cluster by age the variable fin48
 loses statistical significance.Education keeps a very low p value,
 &lt;0.001, and a coefficient of 2.20, meaning that the level of
 education increases the odds of being in the workforce. Being a woman
@@ -1526,7 +1526,7 @@ respondent’s age decreases the odds of being part of the workforce.
 ## 4. Results {#results}
 
 ——————–COMPARISON TO FIND THE BEST MODEL—————————-
-\#\#We now compare the performance of the models to see what is our best
+We now compare the performance of the models to see what is our best
 fit, by looking at their AIC. Given that we treated all models for
 heteroskedasticity in the same way, we can still compare their
 statistical power before the treatment
@@ -1832,10 +1832,10 @@ log-Likelihood
 </td>
 </tr>
 </table>
-\#\#Mod3 has AIC of 994,951, Mod2 has a AIC of 1017.475 and mod1 has a
+Mod3 has AIC of 994,951, Mod2 has a AIC of 1017.475 and mod1 has a
 AIC of 1075.186. Mod3 is therefore the best fit
 
-\#\#We can also check using the Rock curve which is the best model
+We can also check using the Rock curve which is the best model
 betweem mod3 and mod2 (given that there isn’t a big difference between
 thier AIC)
 
@@ -1854,7 +1854,7 @@ thier AIC)
 
 ![](unnamed-chunk-25-1.png)
 
-\#\#Mod3 has a bigger AUC (0.80) and it is therefore confirmed to be
+Mod3 has a bigger AUC (0.80) and it is therefore confirmed to be
 better.
 
 ## 5. Conclusion {#conclusion}
@@ -2036,7 +2036,7 @@ Respondent age
 </td>
 </tr>
 </table>
-\#\#Final interpretation: We can conclude that, overall, it seems that
+Final interpretation: We can conclude that, overall, it seems that
 our data doesn’t allow us to reject or accept the hypothesis that having
 a national ID increases or decreases the odds for individuals to be part
 of the workforce. In the context of the Jordanian labour market, the
@@ -2071,6 +2071,6 @@ this privileged group.
 
 Barbelet, Hagen-Zanker and Mansour-Ille, 2018, “the
 Jordan Compact: Lessons Learnt and implications for future refugee
-compacts”, ODI working paper \#\#Fallah, Kraff, Wahba, 2019, “The impact
+compacts”, ODI working paper Fallah, Kraff, Wahba, 2019, “The impact
 of refugees on employment and wages in Jordan”, Journal of Development
 Economics, 139
