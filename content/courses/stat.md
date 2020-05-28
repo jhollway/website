@@ -42,3 +42,11 @@ RISP062 - Spring 2020
 - [Pedro Dos Santos Maia](/post/Maia/)
 
 - [Augusta Nannerini](/post/Nannerini/)
+
+- [Henrique Sposito](/post/Sposito/)
+
+- [Caixia Wang](/post/Wang/)
+
+- [Michele Zampa](/post/Zampa/)
+
+- [Agnese Zucca](/post/Zucca/)

@@ -11,7 +11,7 @@ image:
 -   [2. Data](#data)
 -   [3. Methods](#methods)
 -   [4. Results](#results)
--   [4. Conclusion](#conclusion)
+-   [5. Conclusion](#conclusion)
 -   [References:](#references)
 
 ## 1. Introduction {#introduction}
@@ -1053,7 +1053,7 @@ seems to decrease slightly by 0.054 square meter per person per year
 during that period, but the effect is not quite statistically
 significant (p=0.055).
 
-## 4. Conclusion {#conclusion}
+## 5. Conclusion {#conclusion}
 
 At the descriptive stage, one could observe that the overall values for
 wooded and recreational area per person per city were relatively
