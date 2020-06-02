@@ -37,8 +37,6 @@ RISP062 - Spring 2020
 
 - [Thomas Gmuer](/post/Gmuer/)
 
-- [Marie Kostrz](/post/Kostrz/)
-
 - [Pedro Dos Santos Maia](/post/Maia/)
 
 - [Augusta Nannerini](/post/Nannerini/)
@@ -46,9 +44,5 @@ RISP062 - Spring 2020
 - [Bilal Salayme](/post/Salayme/)
 
 - [Henrique Sposito](/post/Sposito/)
-
-- [Caixia Wang](/post/Wang/)
-
-- [Michele Zampa](/post/Zampa/)
 
 - [Agnese Zucca](/post/Zucca/)
