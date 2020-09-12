@@ -19,7 +19,7 @@ subtitle = ""
   # To remove toolbar, delete/comment all instances of `[[content.filter_button]]` below.
   
   # Default filter index (e.g. 0 corresponds to the first `[[filter_button]]` instance below).
-  filter_default = 2
+  filter_default = 1
   
   [[content.filter_button]]
      name = "All"
