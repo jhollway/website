@@ -10,3 +10,5 @@ RISP112 - Autumn 2020
 ## Syllabus
 
 Please find the most recent version of the syllabus [here](RISP112_Syllabus_2020_v2.0.pdf)
+
+- [Preface](https://jhollway.github.io/RISP112/TPOL_L1_Preface.html)
