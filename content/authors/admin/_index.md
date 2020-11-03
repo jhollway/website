@@ -102,12 +102,15 @@ user_groups:
 - Visitors
 ---
 
-How do actors seek to address environmental and economic interdependencies through institutions?
-How do the complex networks of institutions they have set up affect how they relate to one another?
-Are these institutions effective? And how can we design or reform them to improve outcomes? 
+How can we institutionalise effective, resilient, and adaptable international cooperation?
+Which institutions are more effective than others?
+Which designs work best in different domains, over the short term and the long term?
+How can we promote meaningful participation?
+And how does the structure of complex networks of institutions affect these and other outcomes?
 
 In my research, I develop multilevel and dynamic theories, methods, and data 
-to help us better understand the implications of institutional and policy choices in these contexts.
+to help us better understand the implications of institutional and policy choices
+in various empirical settings such as fisheries, freshwater, and trade.
 
 <!-- I am Principle Investigator of the PANARCHIC project 
  (Power and Networks and the Rate of Change in Institutional Complexes),
