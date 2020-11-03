@@ -47,8 +47,9 @@ hero_media = ""
   label = "Read the call"
 
 # Note. An optional note to show underneath the links.
-#[cta_note]
-#  label = '<a class="js-github-release" href="https://sourcethemes.com/academic/updates" data-repo="gcushen/hugo-academic">Latest release<!-- V --></a>'
+[cta_note]
+  label = "Deadline 5th November 2020"
+  # label = '<a class="js-github-release" href="https://sourcethemes.com/academic/updates" data-repo="gcushen/hugo-academic">Latest release<!-- V --></a>'
 +++
 
 **Power and Networks and the Rate of Change in Institutional Complexes**
