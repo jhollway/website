@@ -48,12 +48,18 @@ hero_media = ""
 
 # Note. An optional note to show underneath the links.
 [cta_note]
-  label = "Deadline 5th November 2020"
+  label = "Deadline 8th November 2020"
   # label = '<a class="js-github-release" href="https://sourcethemes.com/academic/updates" data-repo="gcushen/hugo-academic">Latest release<!-- V --></a>'
 +++
 
-**Power and Networks and the Rate of Change in Institutional Complexes**
+My SNSF-funded project **Power and Networks and the Rate of Change in Institutional Complexes** 
+is now hiring a research assistant!
 
-Now hiring a Research Assistant!
+If you are an IHEID masters student 
+interested in international institutions and data,
+and ideally have some familiarity with R and/or Github,
+then this may be an excellent opportunity for you.
+
+To find out more, please read the call linked below.
 
 <!-- <span style="text-shadow: none;"><a class="github-button" href="https://github.com/gcushen/hugo-academic" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star this on GitHub">Star</a><script async defer src="https://buttons.github.io/buttons.js"></script></span> -->
