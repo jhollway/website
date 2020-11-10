@@ -5,5 +5,5 @@ authors: ["Ronald B Mitchell", "Liliana B Andonova", "Mark Axelrod", "Jorg Balsi
 publication_types: ["2"]
 publication: "Global Environmental Politics, (20), 1, _pp. 103--121_"
 publication_short: "Global Environmental Politics, (20), 1, _pp. 103--121_"
-tags: [international environmental agreements]
+tags: [international environmental agreements, recent]
 ---

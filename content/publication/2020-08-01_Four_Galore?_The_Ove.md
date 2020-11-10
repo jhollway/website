@@ -5,5 +5,5 @@ authors: ["Marco Verweij", "Petya Alexandrova", "Henrik Jacobsen", "Pauline Bezi
 publication_types: ["2"]
 publication: "Sociological Theory, _pp. 1--32_"
 publication_short: "Sociological Theory, _pp. 1--32_"
-tags: [grid-group typology, social theories, typologies]
+tags: [grid-group typology, social theories, typologies, recent]
 ---

@@ -5,5 +5,5 @@ authors: ["Frank Biermann", "Rakhyun E Kim", "Kenneth W Abbott", "James Hollway"
 publication_types: ["6"]
 publication: "_Architectures of Earth System Governance_. Cambridge: Cambridge University Press, _pp. 299--321_"
 publication_short: "_Architectures of Earth System Governance_. Cambridge: Cambridge University Press, _pp. 299--321_"
-tags: [international environmental agreements]
+tags: [international environmental agreements, recent]
 ---

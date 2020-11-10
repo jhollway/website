@@ -5,5 +5,5 @@ authors: ["Klaus Jacob", "Peter King", "Pedro I J Fidelman", "Leandra R Goncalve
 publication_types: ["6"]
 publication: "_Global Environment Outlook GEO-6_. Cambridge: Cambridge University Press, _pp. 283--300_"
 publication_short: "_Global Environment Outlook GEO-6_. Cambridge: Cambridge University Press, _pp. 283--300_"
-tags: [international environmental agreements]
+tags: [international environmental agreements, recent]
 ---

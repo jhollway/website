@@ -5,5 +5,5 @@ authors: ["Diana Mangalagiu", "Elaine Baker", "Pedro I J Fidelman", "Leandra R G
 publication_types: ["6"]
 publication: "_Global Environment Outlook GEO-6_. Cambridge: Cambridge University Press, _pp. 349--372_"
 publication_short: "_Global Environment Outlook GEO-6_. Cambridge: Cambridge University Press, _pp. 349--372_"
-tags: [fisheries]
+tags: [fisheries, recent]
 ---
