@@ -76,6 +76,7 @@ bibtex_2academic <- function(bibfile,
       # Title and date
       write(paste0("title: \"", x[["title"]], "\""), fileConn, append = T)
       write(paste0("date: \"", anydate(x[["date"]]), "\""), fileConn, append = T)
+      recent <- ifelse(x[["date"]] > Sys.Date() - lubridate::years(2), ", recent", "")
 
       # # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
       auth_hugo <- str_replace_all(x["author"], " and ", "\", \"")
@@ -119,7 +120,7 @@ bibtex_2academic <- function(bibfile,
       # write(paste0("image_preview: \"",image,"\""), fileConn, append = T)
       # write("selected: false", fileConn, append = T)
       # write("projects: []", fileConn, append = T)
-      write(paste0("tags: [",x[["keywords"]],"]"), fileConn, append = T)
+      write(paste0("tags: [",x[["keywords"]],recent,"]"), fileConn, append = T)
       # #links
       # write("url_pdf: \"\"", fileConn, append = T)
       # write("url_preprint: \"\"", fileConn, append = T)
