@@ -17,11 +17,11 @@ hero_media = "9781108833509pvs01.jpg"
   #   Any HTML color name or Hex value is valid.
 
   # Background color.
-  # color = "black"
+  color = "#DFDFDD"
 
   # Background gradient.
-  gradient_start = "#000000"
-  gradient_end = "#BE4039"
+  # gradient_start = "#000000"
+  # gradient_end = "#BE4039"
 
   # Background image.
   # image = "iu.jpeg"  # Name of image in `static/img/`.
@@ -31,14 +31,14 @@ hero_media = "9781108833509pvs01.jpg"
   # image_parallax = true  # Use a fun parallax-like fixed background effect? true/false
 
   # Text color (true=light or false=dark).
-  text_color_light = true
+  text_color_light = false
 
 # Call to action links (optional).
 #   Display link(s) by specifying a URL and label below. Icon is optional for `[cta]`.
 #   Remove a link/note by deleting a cta/note block.
 [cta]
   url = "https://www.cambridge.org/core/books/multimodal-political-networks/43EE8C192A1B0DCD65B4D9B9A7842128"
-  label = "Preorder"
+  label = "Find out more at CUP"
   icon_pack = "fas"
   icon = "cart-arrow-down"
 
@@ -52,10 +52,7 @@ hero_media = "9781108833509pvs01.jpg"
   # label = '<a class="js-github-release" href="https://sourcethemes.com/academic/updates" data-repo="gcushen/hugo-academic">Latest release<!-- V --></a>'
 +++
 
-I am proud to announce that our book will be published in the Structural Analysis in the Social Sciences series
-at Cambridge University Press early next year.
-
-In it, David Knoke, Mario Diani, Dimitris Christopoulos and myself
+In our new book, David Knoke, Mario Diani, Dimitris Christopoulos and myself
 synthesize new understandings of multimodal political networks: 
 what they are, how to measure and analyze them, and what they can reveal about political structures and actions.
 
