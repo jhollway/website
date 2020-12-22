@@ -8,7 +8,6 @@ image:
   placement: 3
 ---
 
-
 Some journalists attribute the revitalization of Black Lives Matter (BLM) in 2020 to dissent against Donald Trump and white participation.
 
 But, not everything has to do with Trump.
