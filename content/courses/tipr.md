@@ -27,6 +27,8 @@ Please find the most recent version of the syllabus [here](RISP112_Syllabus_2020
 
 - [Rachael Healy](/post/Healy/)
 
+- [Attilia Matrone](/post/Matrone/)
+
 - [Isabella Roberts](/post/Roberts/)
 
 - [Simon Stocker](/post/Stocker/)
