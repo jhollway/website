@@ -16,3 +16,5 @@ Please find the most recent version of the syllabus [here](RISP112_Syllabus_2020
 ## Final Op-Eds
 
 - [Kulani Abendroth-Dias](/post/Abendroth-Dias/)
+
+- [Matthias Auer](/post/Auer/)
