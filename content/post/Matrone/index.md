@@ -1,6 +1,6 @@
 ---
 title: "Digital political communication: the effects of the rise of the New Medias"
-authors: ["Nicole Gonzalez"]
+authors: ["Attilia Matrone"]
 date: 2020-12-21
 math: true
 diagram: true
