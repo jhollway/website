@@ -20,3 +20,5 @@ Please find the most recent version of the syllabus [here](RISP112_Syllabus_2020
 - [Matthias Auer](/post/Auer/)
 
 - [Rachael Healy](/post/Healy/)
+
+- [Simon Stocker](/post/Stocker/)
