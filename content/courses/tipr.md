@@ -19,6 +19,8 @@ Please find the most recent version of the syllabus [here](RISP112_Syllabus_2020
 
 - [Matthias Auer](/post/Auer/)
 
+- [Thomas Gmür](/post/Gmuer2/)
+
 - [Yassine Halila](/post/Halila/)
 
 - [Rachael Healy](/post/Healy/)
