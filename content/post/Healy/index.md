@@ -1,5 +1,5 @@
 ---
-title: In 2021 Northern Ireland (NI) will celebrate its centenary
+title: Northern Ireland’s Centenary: Reflecting on Past, Present and Future Divisions
 authors: ["Rachael Louise Healy"]
 date: 2020-12-21
 math: true
