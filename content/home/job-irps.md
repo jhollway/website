@@ -2,7 +2,7 @@
 # Hero widget.
 widget = "hero"  # See https://sourcethemes.com/academic/docs/page-builder/
 headless = true  # This file represents a page section.
-active = true  # Activate this widget? true/false
+active = false  # Activate this widget? true/false
 weight = 5  # Order that this section will appear.
 
 title = "We're looking for a new colleague!"
@@ -52,10 +52,10 @@ title = "We're looking for a new colleague!"
   # label = '<a class="js-github-release" href="https://sourcethemes.com/academic/updates" data-repo="gcushen/hugo-academic">Latest release<!-- V --></a>'
 +++
 
-The International Relations/Political Science Department at 
+The International Relations/Political Science Department at
 the Graduate Institute of International and Development Studies, Geneva, Switzerland
 is looking for a new **Assistant Professor** (tenure track full-time)
-with a particular interest in those researching the functioning of, 
+with a particular interest in those researching the functioning of,
 and challenges to, (global, national) democracy and democratic processes.
 
 <!-- <span style="text-shadow: none;"><a class="github-button" href="https://github.com/gcushen/hugo-academic" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star this on GitHub">Star</a><script async defer src="https://buttons.github.io/buttons.js"></script></span> -->
