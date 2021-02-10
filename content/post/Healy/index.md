@@ -1,5 +1,5 @@
 ---
-title: Northern Ireland’s Centenary: Reflecting on Past, Present and Future Divisions
+title: Northern Ireland’s Centenary - Reflecting on Past, Present and Future Divisions
 authors: ["Rachael Louise Healy"]
 date: 2020-12-21
 math: true
